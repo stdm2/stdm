@@ -81,7 +81,7 @@ First steps
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Feature Documentation
+   :caption: Developer Recipes
 
    recipes/developer
 
