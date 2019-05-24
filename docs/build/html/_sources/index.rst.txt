@@ -81,6 +81,17 @@ First steps
 
 .. toctree::
    :maxdepth: 2
+   :glob:
+   :caption: Developer Recipes
+
+   developer-docs/recipes
+
+.. _developer-docs:
+
+
+
+.. toctree::
+   :maxdepth: 2
    :caption: API Documentation
 
    api-docs/api-doc
