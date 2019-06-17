@@ -104,8 +104,8 @@ deploy:
     user: $USER
     password: $PASSWORD
     file:
-      - stdm-*.tar.gz
-      - stdm-*.zip
+      - stdm_*.tar.gz
+      - stdm_*.zip
     
     file_glob: true
     skip_cleanup: true
@@ -114,7 +114,7 @@ deploy:
       branch: master
 
 after_deploy:
-  - ls -l stdm-*.tar.gz stdm-*.zip
+  - ls -l stdm_*.tar.gz stdm_*.zip
 
 notifications: 
   email: 
