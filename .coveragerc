@@ -2,7 +2,6 @@
 [run]
 branch = True
 parallel = True
-include = twiggy/*
 
 [report]
 omit =
@@ -26,7 +25,7 @@ exclude_lines =
     #assert False.*
 
     # Don't complain if non-runnable code isn't run:
-    if 0:
-    if __name__ == .__main__.:
+    #if 0:
+    #if __name__ == .__main__.:
 
 ignore_errors = False
