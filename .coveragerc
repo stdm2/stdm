@@ -1,9 +1,3 @@
-[report]
-omit =
-    */python?.?/*
-    */site-packages/nose/*
-    *__init__*
-    
 # .coveragerc to control coverage.py
 [run]
 branch = True
@@ -11,6 +5,11 @@ parallel = True
 include = twiggy/*
 
 [report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*
+    *__init__*
+    
 # Regexes for lines to exclude from consideration
 exclude_lines =
     # Have to re-enable the standard pragma
