@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/kngeno/stdm2.svg?branch=master)](https://travis-ci.org/kngeno/stdm2)
 [![Coverage Status](https://coveralls.io/repos/github/kngeno/stdm2/badge.svg)](https://coveralls.io/github/kngeno/stdm2)
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-3.0.en.html)
 [![Documentation Status](https://readthedocs.org/projects/stdm2/badge/?version=latest)](https://stdm2.readthedocs.io/en/latest/?badge=latest)
 [![Join the chat at https://gitter.im/gltn-stdm](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gltn-stdm)
 
@@ -72,7 +72,7 @@ STDM can be installed in two ways:
 
 ### License
 
-STDM is a free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 (GPL v2) as published by the Free Software Foundation. The full GNU General Public License is available in LICENSE.txt or [here](http://www.gnu.org/licenses/gpl-2.0.html).
+STDM is a free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 (GPL v3) as published by the Free Software Foundation. The full GNU General Public License is available in LICENSE.txt or [here](http://www.gnu.org/licenses/gpl-3.0.html).
     
 
 ### How to Participate

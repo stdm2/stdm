@@ -1,39 +1,17 @@
-Welcome to stdm2's documentation!
+=================================
+STDM 2.0 Documentation
 =================================
 
+Welcome to STDM 2.0 documentation!
 
 .. meta::
    :description lang=en: STDM 2.0 User Manual and API Documentation.
 
 The Social Tenure Domain Model (STDM) is a propoor land information tool that provides a flexible approach for representing people-land relationships. The tool provides a practical approach for representing these relationships independent of the level of formality, legality and technical accuracy.
 
-Some of the functionality provided by the tool include:
 
-- It enables the design of new or extension of existing data configurations using an intuitive configuration wizard;
-
-- It allows for the definition of custom, application-wide, hierarchies of administrative units;
-
-- It supports the design of custom templates for map-based documents/reports;
-
-- It enables the generation of map-based documents in batch using custom templates;
-
-- It provides intuitive import and export wizards that support both textual and spatial data in different formats.
-
-For more information about STDM and its documentation, please visit www.stdm.gltn.net.
-
-.. _GLTN: http://www.stdm.gltn.net/
-
-
-First steps
------------
-
-* **Getting started**:
-  :doc:`With STDM <intro/getting-started-with-stdm>` |
-
-* **Importing your existing documentation**:
-  :doc:`Import guide <intro/import-guide>`
-
-
+Table of Contents
+=================================
 
 .. toctree::
    :maxdepth: 2
@@ -43,14 +21,13 @@ First steps
    intro/getting-started-with-stdm
    intro/import-guide
 
-
 .. _about-docs:
 
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: About STDM 2.0
+   :maxdepth: 3
+   :caption: About
 
    intro/about-stdm
 
@@ -59,7 +36,7 @@ First steps
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: User Documentation
 
    user-docs/introduction
@@ -69,7 +46,7 @@ First steps
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :glob:
    :caption: Feature Documentation
 
@@ -80,18 +57,7 @@ First steps
 
 
 .. toctree::
-   :maxdepth: 2
-   :glob:
-   :caption: Developer Recipes
-
-   developer-docs/recipes
-
-.. _developer-docs:
-
-
-
-.. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: API Documentation
 
    api-docs/api-doc
