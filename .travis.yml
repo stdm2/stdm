@@ -129,7 +129,7 @@ deploy:
       branch: master
 
 after_deploy:
-  - ls -l stdm_*.tar.gz stdm_*.zip
+  - ls -lah stdm_*.tar.gz stdm_*.zip
 
 notifications: 
   email: 
