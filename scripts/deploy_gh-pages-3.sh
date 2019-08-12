@@ -23,6 +23,8 @@ fi
 
 # Copy in the HTML.  You may want to change this with your documentation path.
 cp -R ../$REPO/docs/build/html/* ./
+rm -rf docs/ images/ scripts/ stdm/
+rm .* *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst
 
 # Add and commit changes.
 git add -A .
