@@ -87,9 +87,6 @@ after_success:
 before_deploy:
   - chmod +x -R scripts/
 
-script: 
-  - bash scripts/deploy_master.sh
-
 deploy:
   - provider: pages
     github_token: $STDM_TOKEN
@@ -99,18 +96,18 @@ deploy:
     on: 
       branch: master
 
-  - provider: script
-    script: bash scripts/deploy_master.sh
-    skip_cleanup: true
-    on:
-      branch: master
+  # - provider: script
+  #   script: bash scripts/deploy_master.sh
+  #   skip_cleanup: true
+  #   on:
+  #     branch: master
   
-  - provider: script
-    script: bash scripts/deploy_tags.sh
-    skip_cleanup: true
-    on:
-      tags: true
-      branch: master
+  # - provider: script
+  #   script: bash scripts/deploy_tags.sh
+  #   skip_cleanup: true
+  #   on:
+  #     tags: true
+  #     branch: master
       
   - provider: releases
     user: $USER
