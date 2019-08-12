@@ -87,6 +87,9 @@ after_success:
 before_deploy:
   - chmod +x -R scripts/
 
+script: 
+  - bash scripts/deploy_master.sh
+
 deploy:
   - provider: pages
     github_token: $STDM_TOKEN
