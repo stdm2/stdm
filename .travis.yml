@@ -97,10 +97,12 @@ deploy:
   #     branch: master
   
   - provider: script
-    script: bash scripts/deploy_gh-pages-2.sh
+    echo "deploy gh-pages"
+    script: bash scripts/deploy_gh-pages-3.sh
     skip_cleanup: true
     on:
       branch: master
+    echo "end of deploy gh-pages"
 
   # - provider: script
   #   script: bash scripts/deploy_master.sh
