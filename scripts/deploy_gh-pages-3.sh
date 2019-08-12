@@ -17,7 +17,7 @@ cd gh-pages
 # Update git configuration so I can push.
 if [ "$1" != "dry" ]; then
     # Update git config.
-    git config user.name "Travis Builder"
+    git config user.name "$ORG"
     git config user.email "$EMAIL"
 fi
 
