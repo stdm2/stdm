@@ -25,6 +25,7 @@ fi
 cp -R ../$REPO/docs/build/html/* ./
 rm -rf docs/ images/ scripts/ stdm/
 rm .* *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst
+echo "clean github pages"
 
 # Add and commit changes.
 git add -A .
