@@ -25,7 +25,9 @@ if [ "$1" != "dry" ]; then
 fi
 
 # Copy in the HTML.  You may want to change this with your documentation path.
-cp -R docs/build/html/* ./
+ls -lah
+pwd
+cp -R ../$REPO/docs/build/html/* ./
 rm -rf docs/ images/ scripts/ stdm/
 rm .coveragerc .coveralls.yml .readthedocs.yml .gitignore *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst || :
 echo "clean github pages"
