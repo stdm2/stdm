@@ -26,8 +26,8 @@ fi
 
 # Copy in the HTML.  You may want to change this with your documentation path.
 echo "project path..."
-cp -R docs/* ./
-rm -rf docs/ images/ scripts/ stdm/
+cp -R docs/* ./ || :
+rm -rf docs/ images/ scripts/ stdm/ || :
 rm .coveragerc .coveralls.yml .readthedocs.yml .gitignore *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst || :
 echo "clean github pages"
 
