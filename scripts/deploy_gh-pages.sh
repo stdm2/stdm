@@ -31,7 +31,7 @@ fi
 # Copy in the HTML.  You may want to change this with your documentation path.
 ls -lah
 pwd
-cp -R ../../$REPO/gh-pages/docs/build/html/* ./
+cp -R docs/* ./
 rm -rf docs/ images/ scripts/ stdm/
 rm .coveragerc .coveralls.yml .readthedocs.yml .gitignore *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst || :
 echo "clean github pages"
