@@ -11,8 +11,11 @@ set -e
 
 # Clone the gh-pages branch outside of the repo and cd into it.
 cd ..
-git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages
+git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
 cd gh-pages
+
+echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
+echo "[View live](https://${ORG}.github.io/${REPO}/)"
 
 # Update git configuration so I can push.
 if [ "$1" != "dry" ]; then
@@ -29,9 +32,10 @@ echo "clean github pages"
 
 # Add and commit changes.
 git add -A .
-git commit -m "[travis skip] Autodoc commit for $COMMIT."
+git commit -m "[travis skip] Autodoc commit for $TRAVIS_BUILD_NUMBER $COMMIT."
+
 if [ "$1" != "dry" ]; then
     # -q is very important, otherwise you leak your GH_TOKEN
-    git push -q origin gh-pages
+    git push -fq origin gh-pages > /dev/null
     echo "updated github pages...."
 fi

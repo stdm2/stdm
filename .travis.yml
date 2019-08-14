@@ -47,13 +47,13 @@ before_install:
       }
     fi
     
-  - docker version
-  - docker-compose version
-  - docker-compose up -d
-  - docker-compose ps
-  - sleep 10
-  - docker-compose exec qgis-testing-environment sh -c "qgis_setup.sh ${PLUGIN_NAME}"
-  - docker-compose exec qgis-testing-environment sh -c "pip3 install -r /${DOCKER_QGIS_TEST_DIR}/requirements.txt"
+  # - docker version
+  # - docker-compose version
+  # - docker-compose up -d
+  # - docker-compose ps
+  # - sleep 10
+  # - docker-compose exec qgis-testing-environment sh -c "qgis_setup.sh ${PLUGIN_NAME}"
+  # - docker-compose exec qgis-testing-environment sh -c "pip3 install -r /${DOCKER_QGIS_TEST_DIR}/requirements.txt"
 
 install: 
   # requirements
@@ -61,9 +61,9 @@ install:
   - pip3 install -r requirements.txt;
 
 script:
-- docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"
+# - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"
 # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory
-- docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"
+# - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"
 # coverage test
 # - coverage run stdm/tests/test_plugin.py
 # create coverage report
