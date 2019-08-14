@@ -97,7 +97,7 @@ deploy:
   #     branch: master
   
   - provider: script
-    script: bash scripts/deploy_gh-pages-3.sh
+    script: bash scripts/deploy_gh-pages.sh
     skip_cleanup: true
     on:
       branch: master
