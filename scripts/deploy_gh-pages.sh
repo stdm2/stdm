@@ -3,7 +3,7 @@
 
 # Fill this out with the correct org/repo
 ORG=kngeno
-REPO=stdm2
+# REPO=stdm2
 # This probably should match an email for one of your users.
 EMAIL=kngeno.kevin@gmail.com
 
@@ -11,8 +11,12 @@ set -e
 
 # Clone the gh-pages branch outside of the repo and cd into it.
 cd ..
-git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
+git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/stdm2.git" gh-pages > /dev/null
 cd gh-pages
+echo "list files"
+ls -lah 
+echo "directory path"
+pwd
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://${ORG}.github.io/${REPO}/)"
@@ -27,7 +31,7 @@ fi
 # Copy in the HTML.  You may want to change this with your documentation path.
 ls -lah
 pwd
-cp -R docs/build/html/* ./
+cp -R ../gh-pages/docs/build/html/* ./
 rm -rf docs/ images/ scripts/ stdm/
 rm .coveragerc .coveralls.yml .readthedocs.yml .gitignore *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst || :
 echo "clean github pages"
