@@ -29,8 +29,9 @@ echo "clean github pages"
 
 # Add and commit changes.
 git add -A .
-git commit -m "[ci skip] Autodoc commit for $COMMIT."
+git commit -m "[travis skip] Autodoc commit for $COMMIT."
 if [ "$1" != "dry" ]; then
     # -q is very important, otherwise you leak your GH_TOKEN
     git push -q origin gh-pages
+    echo "updated github pages"
 fi
