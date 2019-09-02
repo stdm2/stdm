@@ -4,3 +4,7 @@ source: documentation/build/html
 destination: docs/
 include: ["_modules","_sources","_static"]
 timezone: Africa/Nairobi
+title: STDM 2.0 Documentation
+name: STDM 2.0 Documentation
+markdown: 
+header: 'STDM 2.0 Documentation'
