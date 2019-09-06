@@ -9,6 +9,12 @@ EMAIL=kngeno.kevin@gmail.com
 
 set -e
 
+# Clone the gh-pages branch outside of the repo and cd into it.
+cd ..
+echo "Cloning master branch"
+git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
+cd gh-pages
+
 git-delete-branch() 
 { 
     if [[ -n "gh-pages" ]]; then
@@ -26,11 +32,12 @@ git-delete-branch()
     fi
 }
 
-# Clone the gh-pages branch outside of the repo and cd into it.
-cd ..
-echo "Cloning master branch"
-git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
-cd gh-pages
+echo "Create gh-pages branch..."
+git checkout -b gh-pages
+git push origin gh-pages
+git push --set-upstream origin gh-pages
+echo "Set upstream gh-pages branch..."
+
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://kngeno.github.io/stdm2/)"
