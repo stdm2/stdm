@@ -15,28 +15,28 @@ echo "Cloning master branch"
 git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
 cd gh-pages
 
-git-delete-branch() 
-{ 
-    if [[ -n "gh-pages" ]]; then
-        git checkout master > /dev/null;
-        branch_name="gh-pages";
-        echo "Deleting local $branch_name branch...";
-        git branch -D "$branch_name";
-        echo "Deleting remote $branch_name branch...";
-        git push origin --delete "$branch_name";
-        git remote prune origin;
-        echo "Your current branches are:";
-        git branch -a;
-    else
-        echo "Usage: git-delete-branch <branch_name>";
-    fi
-}
+# git-delete-branch() 
+# { 
+#     if [[ -n "gh-pages" ]]; then
+#         git checkout master > /dev/null;
+#         branch_name="gh-pages";
+#         echo "Deleting local $branch_name branch...";
+#         git branch -D "$branch_name";
+#         echo "Deleting remote $branch_name branch...";
+#         git push origin --delete "$branch_name";
+#         git remote prune origin;
+#         echo "Your current branches are:";
+#         git branch -a;
+#     else
+#         echo "Usage: git-delete-branch <branch_name>";
+#     fi
+# }
 
-echo "Create gh-pages branch..."
-git checkout -b gh-pages
-git push origin gh-pages > /dev/null
-git push --set-upstream origin gh-pages > /dev/null
-echo "Set upstream gh-pages branch..."
+# echo "Create gh-pages branch..."
+# git checkout -b gh-pages
+# git push origin gh-pages > /dev/null
+# git push --set-upstream origin gh-pages > /dev/null
+# echo "Set upstream gh-pages branch..."
 
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
