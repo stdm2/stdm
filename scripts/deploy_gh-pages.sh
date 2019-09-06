@@ -11,6 +11,7 @@ set -e
 
 # Clone the gh-pages branch outside of the repo and cd into it.
 cd ..
+echo "Cloning master branch"
 git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
 cd gh-pages
 
@@ -26,6 +27,10 @@ fi
 
 # Copy in the HTML.  You may want to change this with your documentation path.
 echo "project path..."
+
+ls -lah
+pwd
+
 cp -R docs/* ./ || :
 rm -rf docs/ images/ scripts/ stdm/ || :
 rm .coveragerc .coveralls.yml .readthedocs.yml .gitignore *.yml *.txt *.inv *.sh *.md CONTRIBUTORS.rst || :
