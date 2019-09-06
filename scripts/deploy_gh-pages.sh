@@ -4,7 +4,7 @@
 # Fill this out with the correct org/repo
 ORG=kngeno
 REPO=stdm2
-GH-PAGES=gh-pages
+# GH-PAGES=gh-pages
 # This probably should match an email for one of your users.
 EMAIL=kngeno.kevin@gmail.com
 
@@ -18,7 +18,7 @@ setup_git() {
 commit_website_files() {
   cd ..
   echo "Cloning master branch"
-  git clone "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
+  git clone https://$STDM_TOKEN@github.com/$ORG/$REPO.git gh-pages > /dev/null
   cd gh-pages
   git branch -d gh-pages
   git fetch --all --prune
