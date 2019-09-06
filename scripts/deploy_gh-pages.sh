@@ -34,8 +34,8 @@ git-delete-branch()
 
 echo "Create gh-pages branch..."
 git checkout -b gh-pages
-git push origin gh-pages
-git push --set-upstream origin gh-pages
+git push origin gh-pages > /dev/null
+git push --set-upstream origin gh-pages > /dev/null
 echo "Set upstream gh-pages branch..."
 
 
