@@ -20,6 +20,7 @@ commit_website_files() {
   echo "Cloning master branch"
   git clone "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
   cd gh-pages
+  git fetch --prune origin
   git push origin --delete gh-pages
   git checkout -b gh-pages
 
