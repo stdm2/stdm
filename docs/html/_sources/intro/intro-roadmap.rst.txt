@@ -1,0 +1,10 @@
+.. _doc_intro_roadmap:
+
+Roadmap
+=================================
+
+-   STDM Desktop (Plugin)
+
+-   STDM Online & ODK Aggregate
+
+-   Mobile GeoODK

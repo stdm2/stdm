@@ -1,0 +1,13 @@
+Recipes Guide
+=============
+
+.. toctree::
+   :maxdepth: 1
+   :name: recipes-documentation
+
+   recipes-introduction
+
+
+.. history
+.. authors
+.. license

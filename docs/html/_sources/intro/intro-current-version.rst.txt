@@ -1,0 +1,6 @@
+.. _doc_intro_current_version:
+
+Current Version and Features
+=================================
+
+STDM 2.0 with new features and enhancements.

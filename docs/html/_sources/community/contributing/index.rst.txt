@@ -1,0 +1,12 @@
+Contributing
+============
+
+.. toctree::
+   :maxdepth: 1
+   :name: toc-community-contributing
+
+   community-ways_to_contribute
+   community-pr_workflow
+   community-versioning-api
+   community-code_style_guidelines
+   community-documentation_guidelines

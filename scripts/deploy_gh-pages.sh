@@ -15,7 +15,7 @@ git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages >
 cd gh-pages
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
-echo "[View live](https://${ORG}.github.io/${REPO}/)"
+echo "[View live](https://kngeno.github.io/stdm2/)"
 
 # Update git configuration so I can push.
 if [ "$1" != "dry" ]; then

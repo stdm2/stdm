@@ -1,0 +1,15 @@
+Getting Started
+===============
+
+.. toctree::
+   :maxdepth: 1
+   :name: toc-about
+
+   getting-started-first-steps
+   getting-started-installation-guide
+   getting-started-tutorial
+   getting-started-examples
+
+.. history
+.. authors
+.. license

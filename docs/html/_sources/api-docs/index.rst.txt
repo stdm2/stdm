@@ -1,0 +1,16 @@
+API Guide
+=========
+
+.. toctree::
+   :maxdepth: 1
+   :name: toc-about
+
+   api-introduction
+   api-methods
+   api-constants
+   api-doc
+
+
+.. history
+.. authors
+.. license
