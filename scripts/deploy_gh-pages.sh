@@ -12,14 +12,13 @@ set -e
 
 # Clone the gh-pages branch outside of the repo and cd into it.
 cd ..
+echo "Cloning master branch"
+git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
+cd gh-pages
 git push origin --delete https://$STDM_TOKEN@github.com/$ORG/$GH_PAGES.git
 git remote add origin https://$STDM_TOKEN@github.com/$ORG/$REPO.git
 git push origin gh-pages > /dev/null
 git push --set-upstream origin gh-pages > /dev/null
-
-echo "Cloning master branch"
-git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
-cd gh-pages
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://kngeno.github.io/stdm2/)"
