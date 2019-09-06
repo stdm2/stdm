@@ -4,6 +4,7 @@
 # Fill this out with the correct org/repo
 ORG=kngeno
 REPO=stdm2
+GH-PAGES=gh-pages
 # This probably should match an email for one of your users.
 EMAIL=kngeno.kevin@gmail.com
 
@@ -11,33 +12,14 @@ set -e
 
 # Clone the gh-pages branch outside of the repo and cd into it.
 cd ..
+git push origin --delete https://$STDM_TOKEN@github.com/$ORG/$GH_PAGES.git
+git remote add origin https://$STDM_TOKEN@github.com/$ORG/$REPO.git
+git push origin gh-pages > /dev/null
+git push --set-upstream origin gh-pages > /dev/null
+
 echo "Cloning master branch"
 git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
 cd gh-pages
-
-# git-delete-branch() 
-# { 
-#     if [[ -n "gh-pages" ]]; then
-#         git checkout master > /dev/null;
-#         branch_name="gh-pages";
-#         echo "Deleting local $branch_name branch...";
-#         git branch -D "$branch_name";
-#         echo "Deleting remote $branch_name branch...";
-#         git push origin --delete "$branch_name";
-#         git remote prune origin;
-#         echo "Your current branches are:";
-#         git branch -a;
-#     else
-#         echo "Usage: git-delete-branch <branch_name>";
-#     fi
-# }
-
-# echo "Create gh-pages branch..."
-# git checkout -b gh-pages
-# git push origin gh-pages > /dev/null
-# git push --set-upstream origin gh-pages > /dev/null
-# echo "Set upstream gh-pages branch..."
-
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://kngeno.github.io/stdm2/)"
