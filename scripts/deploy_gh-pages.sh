@@ -15,10 +15,11 @@ setup_git() {
   git config --global user.name "Travis CI"
 }
 
-commit_website_files() {
+commit_files() {
   cd ..
   echo "Cloning master branch"
-  git clone https://$STDM_TOKEN@github.com/$ORG/$REPO.git gh-pages > /dev/null
+  git clone https://$STDM_TOKEN@github.com/$ORG/$REPO.git > /dev/null
+  mv $REPO gh-pages
   cd gh-pages
   git branch -d gh-pages
   git fetch --all --prune
@@ -36,7 +37,7 @@ upload_files() {
 }
 
 setup_git
-commit_website_files
+commit_files
 upload_files
 
 # Clone the gh-pages branch outside of the repo and cd into it.
