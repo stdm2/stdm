@@ -20,15 +20,19 @@ commit_website_files() {
   echo "Cloning master branch"
   git clone "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
   cd gh-pages
+  git branch -d gh-pages
+  git fetch --all --prune
   git fetch --prune origin
   git push origin --delete gh-pages
+#   git branch gh-pages
+#   git push origin gh-pages
   git checkout -b gh-pages
 
 }
 
 upload_files() {
-  git remote add origin-pages https://$STDM_TOKEN@github.com/$ORG/$REPO.git > /dev/null 2>&1
-  git push --quiet --set-upstream origin-pages gh-pages 
+  git remote add origin https://$STDM_TOKEN@github.com/$ORG/$REPO.git > /dev/null 2>&1
+  git push --quiet --set-upstream origin gh-pages 
 }
 
 setup_git
