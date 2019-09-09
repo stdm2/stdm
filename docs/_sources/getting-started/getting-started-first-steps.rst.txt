@@ -1,0 +1,21 @@
+.. _doc_first_steps:
+
+First Steps
+===========
+
+
+STDM as a concept
+----------------------------------
+There is a gap in the conventional land administration systems such that customary and informal tenure cannot be easily handled. There is a need for complimentary approaches in land administration.
+The concept of the Social Tenure Domain Model is to bridge this gap by providing a standard for representing ‘people – land’ relationships independent of the level of formality, legality and technical accuracy.
+
+
+STDM as a model
+----------------------------------
+The STDM is a ‘specialization’ of the ISO-approved Land Administration Domain Model (LADM). In this context, specialization means that there are some differences, which are mostly in the terminology and in the application area. LADM development took place in parallel of STDM development as a concept and a model, and that the core developers of both models are the same or supportive of each other.
+Any form of right, responsibility or restriction in a formal system is considered as a social tenure relationship in STDM.
+
+STDM as an information tool
+-----------------------------------
+The need for efficient land rights’ recordation tools and use of ICT has become a necessity and increasingly becoming more available in recent times. The STDM information tool provides the front-end interface for testing and applying the STDM concept and model.
+Building from the STDM prototype version and in adherence to GLTN core values (e.g. pro-poor, equity, affordability, good governance, subsidiarity, gender sensitiveness, systematic large scale approach and sustainability), UN-Habitat/GLTN together with its implementing partners, have supported the continuous development of the information tool in a variety of application areas ranging from informal settlement upgrading to natural resource management.

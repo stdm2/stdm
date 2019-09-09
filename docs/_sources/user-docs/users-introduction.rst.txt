@@ -1,0 +1,16 @@
+.. _doc_users_introduction:
+
+User Guide
+==========
+
+.. toctree::
+   :maxdepth: 1
+   :name: toc-user-guide
+
+   stdm-desktop/introduction   
+   stdm-mobile/introduction   
+   stdm-online/introduction 
+
+.. history
+.. authors
+.. license

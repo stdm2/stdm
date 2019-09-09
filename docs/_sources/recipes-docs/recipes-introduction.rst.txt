@@ -1,0 +1,4 @@
+.. _doc_recipes_introduction:
+
+Introduction
+============

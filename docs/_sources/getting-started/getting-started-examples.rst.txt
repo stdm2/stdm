@@ -1,0 +1,4 @@
+.. _doc_getting_started_examples:
+
+Examples
+========

@@ -1,0 +1,11 @@
+STDM Mobile
+===========
+
+.. toctree::
+   :maxdepth: 1
+   :name: toc-intro-stdm-mobile
+
+
+.. history
+.. authors
+.. license

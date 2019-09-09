@@ -14,50 +14,53 @@ Table of Contents
 =================================
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: First Steps
+   :maxdepth: 1
+   :caption: General
 
-   intro/getting-started-with-stdm
-   intro/import-guide
-
-.. _about-docs:
-
+   intro/index
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: About
+   :maxdepth: 1
+   :caption: Getting Started
 
-   intro/about-stdm
+   getting-started/index
+   
 
-.. _user-docs:
+.. toctree::
+   :maxdepth: 1
+   :caption: Users
 
+   user-docs/users-introduction
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: User Documentation
+   :maxdepth: 1
+   :caption: API
 
-   user-docs/introduction
-
-.. _feature-docs:
-
+   api-docs/index
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :glob:
-   :caption: Feature Documentation
+   :caption: Recipes
 
-   feature-docs/introduction
-
-.. _api-docs:
-
+   recipes-docs/index
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: API Documentation
+   :maxdepth: 1
+   :glob:
+   :caption: Community
 
-   api-docs/api-doc
+   community/contributing/index
+   community/community-communication-channels
+   community/community-resources
+
+.. Indices and tables
+.. ------------------
+..
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
