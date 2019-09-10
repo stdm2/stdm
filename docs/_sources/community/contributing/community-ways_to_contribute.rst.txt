@@ -145,7 +145,7 @@ Coding style
 ============
 
 Please follow these coding conventions when writing code for inclusion in
-Scrapy:
+STDM:
 
 * Unless otherwise specified, follow :pep:`8`.
 
