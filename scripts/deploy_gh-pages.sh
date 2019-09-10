@@ -4,7 +4,6 @@
 # Fill this out with the correct org/repo
 ORG=kngeno
 REPO=stdm2
-# This probably should match an email for one of your users.
 EMAIL=kngeno.kevin@gmail.com
 
 set -e
