@@ -37,7 +37,16 @@ stages:
   - deploy
   - after_deploy
 
-before_install: 
+before_install:
+  # - echo Checking whether $TRAVIS_COMMIT_RANGE changed only docs
+  # - |
+  #   if [ -z "$TRAVIS_TAG" ]; then
+  #     git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qvE '(\.md$|^(docs)/)' || {
+  #       echo "Only docs were updated, stopping build process."
+  #       exit
+  #     }
+  #   fi
+    
   # - docker version
   # - docker-compose version
   # - docker-compose up -d
@@ -88,15 +97,6 @@ deploy:
     target_branch: gh-pages # Tell Travis to deploy on the gh-pages branch
     on:
       branch: master
-
-  - echo Checking whether $TRAVIS_COMMIT_RANGE changed only docs
-  - |
-    if [ -z "$TRAVIS_TAG" ]; then
-      git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qvE '(\.md$|^(docs)/)' || {
-        echo "Only docs were updated, stopping build process."
-        exit
-      }
-    fi
 
   - provider: script
     script: bash scripts/deploy_master.sh
