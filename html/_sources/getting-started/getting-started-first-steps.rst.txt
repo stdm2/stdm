@@ -1,4 +1,0 @@
-.. _doc_first_steps:
-
-First Steps
-===========

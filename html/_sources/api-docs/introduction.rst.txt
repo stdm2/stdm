@@ -1,4 +1,0 @@
-.. _doc_api_intro:
-
-API Documentation
-=================

@@ -1,4 +1,0 @@
-.. _doc_users_introduction:
-
-User Guide
-==========

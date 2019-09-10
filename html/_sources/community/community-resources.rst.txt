@@ -1,4 +1,0 @@
-.. _doc_community_resources:
-
-Resources
-=========
