@@ -88,12 +88,6 @@ before_deploy:
   - chmod +x -R scripts/
 
 deploy:
-  # - provider: script
-  #   script: bash scripts/deploy_gh-pages.sh
-  #   skip_cleanup: true
-  #   on:
-  #     branch: master
-
   - provider: pages
     skip_cleanup: true
     github_token: $STDM_TOKEN  # Set in the settings page of your repository, as a secure variable
