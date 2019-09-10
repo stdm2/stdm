@@ -13,6 +13,7 @@ cd ..
 git clone -b gh-pages "https://$STDM_TOKEN@github.com/$ORG/$REPO.git" gh-pages > /dev/null
 cd gh-pages
 
+#
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://${ORG}.github.io/${REPO}/)"
 
