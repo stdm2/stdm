@@ -8,7 +8,7 @@ Ways to Contribute
     Double check that you are reading the most recent version of this document at
     `Contributing <https://gltn.github.io/stdm2/contributing.html>`_
 
-There are many ways to contribute to Scrapy. Here are some of them:
+There are many ways to contribute to STDM. Here are some of them:
 
 * Blog about STDM 2.0. Tell the world how you're using STDM 2.0. This will help
   getting new patners/newcomers with more profiles/examples and will help the STDM 2.0 project to increase its
@@ -54,7 +54,7 @@ guidelines when you're going to report a new bug.
 
 * The most awesome way to provide a complete reproducible example is to
   send a pull request which adds a failing test case to the
-  Scrapy testing suite (see :ref:`submitting-patches`).
+  STDM testing suite (see :ref:`submitting-patches`).
   This is helpful even if you don't have an intention to
   fix the issue yourselves.
 
@@ -124,16 +124,17 @@ his/her commits.
 
 You can pull an existing pull request to a local branch
 by running ``git fetch upstream pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE``
-(replace 'upstream' with a remote name for scrapy repository,
+(replace 'upstream' with a remote name for STDM repository,
 ``$PR_NUMBER`` with an ID of the pull request, and ``$BRANCH_NAME_TO_CREATE``
 with a name of the branch you want to create locally).
 See also: `Modifying an inactive pull request locally <https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally>`_.
 
 When writing GitHub pull requests, try to keep titles short but descriptive.
-**E.g. For bug #411: "Scrapy hangs if an exception raises in start_requests"**
+For example:
+| **For bug #411: "STDM hangs if an exception raises in start_requests"**
 prefer **"Fix hanging when exception occurs in start_requests (#411)"**
-instead of **"Fix for #411"**. Complete titles make it easy to skim through
-the issue tracker.
+instead of **"Fix for #411"**. 
+| Complete titles make it easy to skim through the issue tracker.
 
 Finally, try to keep aesthetic changes (:pep:`8` compliance, unused imports
 removal, etc) in separate commits from functional changes. This will make pull
@@ -144,7 +145,7 @@ Coding style
 ============
 
 Please follow these coding conventions when writing code for inclusion in
-Scrapy:
+STDM:
 
 * Unless otherwise specified, follow :pep:`8`.
 

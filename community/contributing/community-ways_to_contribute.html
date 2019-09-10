@@ -98,7 +98,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-before.html">Before Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-guide.html">Installation</a></li>
@@ -146,7 +146,7 @@
 <li class="toctree-l2"><a class="reference internal" href="community-guidelines_documentation.html">Documentation Guidelines</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communcation Channels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communication Channels</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community-resources.html">Resources</a></li>
 </ul>
 
@@ -221,7 +221,7 @@
 <p>Double check that you are reading the most recent version of this document at
 <a class="reference external" href="https://gltn.github.io/stdm2/contributing.html">Contributing</a></p>
 </div>
-<p>There are many ways to contribute to Scrapy. Here are some of them:</p>
+<p>There are many ways to contribute to STDM. Here are some of them:</p>
 <ul class="simple">
 <li><p>Blog about STDM 2.0. Tell the world how you’re using STDM 2.0. This will help
 getting new patners/newcomers with more profiles/examples and will help the STDM 2.0 project to increase its
@@ -259,7 +259,7 @@ it. See for example StackOverflow’s guide on creating a
 <a class="reference external" href="https://stackoverflow.com/help/mcve">Minimal, Complete, and Verifiable example</a> exhibiting the issue.</p></li>
 <li><p>The most awesome way to provide a complete reproducible example is to
 send a pull request which adds a failing test case to the
-Scrapy testing suite (see <a class="reference internal" href="#submitting-patches"><span class="std std-ref">Submitting patches</span></a>).
+STDM testing suite (see <a class="reference internal" href="#submitting-patches"><span class="std std-ref">Submitting patches</span></a>).
 This is helpful even if you don’t have an intention to
 fix the issue yourselves.</p></li>
 <li><p>Include the <strong>STDM version</strong> so developers working on your bug
@@ -312,15 +312,16 @@ not considered rude as soon as the original author is acknowledged by keeping
 his/her commits.</p>
 <p>You can pull an existing pull request to a local branch
 by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span> <span class="pre">pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE</span></code>
-(replace ‘upstream’ with a remote name for scrapy repository,
+(replace ‘upstream’ with a remote name for STDM repository,
 <code class="docutils literal notranslate"><span class="pre">$PR_NUMBER</span></code> with an ID of the pull request, and <code class="docutils literal notranslate"><span class="pre">$BRANCH_NAME_TO_CREATE</span></code>
 with a name of the branch you want to create locally).
 See also: <a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally">Modifying an inactive pull request locally</a>.</p>
 <p>When writing GitHub pull requests, try to keep titles short but descriptive.
-<strong>E.g. For bug #411: “Scrapy hangs if an exception raises in start_requests”</strong>
+For example:
+| <strong>For bug #411: “STDM hangs if an exception raises in start_requests”</strong>
 prefer <strong>“Fix hanging when exception occurs in start_requests (#411)”</strong>
-instead of <strong>“Fix for #411”</strong>. Complete titles make it easy to skim through
-the issue tracker.</p>
+instead of <strong>“Fix for #411”</strong>.
+| Complete titles make it easy to skim through the issue tracker.</p>
 <p>Finally, try to keep aesthetic changes (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> compliance, unused imports
 removal, etc) in separate commits from functional changes. This will make pull
 requests easier to review and more likely to get merged.</p>
@@ -328,7 +329,7 @@ requests easier to review and more likely to get merged.</p>
 <div class="section" id="coding-style">
 <h1>Coding style<a class="headerlink" href="#coding-style" title="Permalink to this headline">¶</a></h1>
 <p>Please follow these coding conventions when writing code for inclusion in
-Scrapy:</p>
+STDM:</p>
 <ul class="simple">
 <li><p>Unless otherwise specified, follow <span class="target" id="index-1"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a>.</p></li>
 <li><p>It’s OK to use lines longer than 80 chars if it improves the code
