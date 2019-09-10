@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Versioning and API Stability &mdash; STDM 2.0 2.0 documentation</title>
+  <title>Code Style Guidelines &mdash; STDM 2.0 2.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Code Style Guidelines" href="community-guidelines_code_style.html" />
-    <link rel="prev" title="Pull Request Workflow" href="community-pr_workflow.html" /> 
+    <link rel="next" title="API Guidelines" href="community-guidelines_api.html" />
+    <link rel="prev" title="Versioning and API Stability" href="community-versioning-api.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -135,8 +135,14 @@
 <li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#documentation-policies">Documentation policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#tests">Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-pr_workflow.html">Pull Request Workflow</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Versioning and API Stability</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_code_style.html">Code Style Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-versioning-api.html">Versioning and API Stability</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Code Style Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ordering-of-imports">Ordering of Imports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#doc-strings-and-comments">Doc strings and comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#annotating-api-changes-and-additions">Annotating API changes and additions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strings-and-internationalization">Strings and internationalization</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="community-guidelines_api.html">API Guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-guidelines_recipes.html">Recipes Guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-guidelines_documentation.html">Documentation Guidelines</a></li>
@@ -191,13 +197,13 @@
         
           <li><a href="index.html">Contributing</a> &raquo;</li>
         
-      <li>Versioning and API Stability</li>
+      <li>Code Style Guidelines</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/community/contributing/community-versioning-api.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/community/contributing/community-guidelines_code_style.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -210,11 +216,119 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="versioning-and-api-stability">
-<span id="doc-community-versioning-api"></span><h1>Versioning and API Stability<a class="headerlink" href="#versioning-and-api-stability" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="code-style-guidelines">
+<span id="doc-guidelines-community-code-style"></span><h1>Code Style Guidelines<a class="headerlink" href="#code-style-guidelines" title="Permalink to this headline">¶</a></h1>
 <div class="admonition-todo admonition" id="index-0">
 <p class="admonition-title">Todo</p>
-<p>Versioning and API Stability</p>
+<p>Code Style Guidelines</p>
+</div>
+<p>STDM Coding Standards
+Rev. 10.01.2017
+Compliance
+*    Coding must follow PEP8 guidelines. I implore you to read these guidelines with regard to imports, use of spaces instead of tabs, class names, function and method names, maximum line length etc. Please enforce these guidelines when refactoring code
+*    Use the Python documentation guide for Docstring
+Source Code Header
+Ensure that each module file contains the following header information with a brief narrative of what the module does. See an example below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">/***************************************************************************</span>
+<span class="s2">Name                 : Document Viewer</span>
+<span class="s2">Description          : GUI classes for managing and viewing supporting</span>
+<span class="s2">                       documents.</span>
+<span class="s2">Date                 : 8/September/2014</span>
+<span class="s2">copyright            : (C) 2014 by UN-Habitat and implementing partners.</span>
+<span class="s2">                       See the accompanying file CONTRIBUTORS.txt in the root</span>
+<span class="s2">email                : stdm@unhabitat.org</span>
+<span class="s2"> ***************************************************************************/</span>
+
+<span class="s2">/***************************************************************************</span>
+<span class="s2"> *                                                                         *</span>
+<span class="s2"> *   This program is free software; you can redistribute it and/or modify  *</span>
+<span class="s2"> *   it under the terms of the GNU General Public License as published by  *</span>
+<span class="s2"> *   the Free Software Foundation; either version 2 of the License, or     *</span>
+<span class="s2"> *   (at your option) any later version.                                   *</span>
+<span class="s2"> *                                                                         *</span>
+<span class="s2"> ***************************************************************************/</span>
+</pre></div>
+</div>
+<div class="section" id="ordering-of-imports">
+<h2>Ordering of Imports<a class="headerlink" href="#ordering-of-imports" title="Permalink to this headline">¶</a></h2>
+<p>Please adhere to the following import rules:</p>
+<ul class="simple">
+<li><p>Do not use * to import everything e.g. from PyQt4.QtGui import *</p></li>
+<li><p>Either import the individual module names e.g. from PyQt4.QtGui import QWidget</p></li>
+<li><p>Import the whole package and use the namespace to reference a module such as:</p></li>
+</ul>
+<p>::
+from PyQt4 import QtGui
+Widget = QtGui.QWidget</p>
+<p>Imports should be made in the following order:</p>
+<ul class="simple">
+<li><p>Core Python imports e.g. import sys</p></li>
+<li><p>Third party imports e.g. from PyQt4.QtCore import QObject</p></li>
+<li><p>Application imports e.g. from data import Connection</p></li>
+</ul>
+</div>
+<div class="section" id="doc-strings-and-comments">
+<h2>Doc strings and comments<a class="headerlink" href="#doc-strings-and-comments" title="Permalink to this headline">¶</a></h2>
+<p>All code should be self-documenting. Please take special note and follow these PEP guidelines and sphinx documents:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.python.org/dev/peps/pep-0287/">http://www.python.org/dev/peps/pep-0287/</a></p></li>
+<li><p><a class="reference external" href="http://sphinx-doc.org/markup/desc.html#info-field-lists">http://sphinx-doc.org/markup/desc.html#info-field-lists</a></p></li>
+<li><p><a class="reference external" href="http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html">http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html</a></p></li>
+</ul>
+<p>The following specific guidelines also apply:</p>
+<ul class="simple">
+<li><p>Docstrings must be triple quoted with “””</p></li>
+<li><p>Inline comments should start with a # and a single space</p></li>
+<li><p>Comments should be complete sentences ending with a full stop/period</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">absolute_document_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">document_widget</span><span class="p">):</span>
+<span class="sd">&quot;&quot;&quot;Build the absolute document path using info from the document widget.</span>
+<span class="sd">        :param document_widget: Instance of document widget.</span>
+<span class="sd">               :type document_widget: DocumentWidget</span>
+<span class="sd">        :return: Absolute path of the supporting document.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="annotating-api-changes-and-additions">
+<h2>Annotating API changes and additions<a class="headerlink" href="#annotating-api-changes-and-additions" title="Permalink to this headline">¶</a></h2>
+<p>Whenever you add or change a module, class, function or method, you should annotate it accordingly. The method for doing this is described on the Sphinx paragraph markup page. Here are a couple of examples:</p>
+<ul class="simple">
+<li><p>Adding a new module</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>“””Mapping function utilities.
+
+.. versionadded:: 1.2
+“””
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Adding a new method to a class</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Return user-friendly column name.</span>
+
+<span class="sd">.. versionadded:: 1.2</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="strings-and-internationalization">
+<h2>Strings and internationalization<a class="headerlink" href="#strings-and-internationalization" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Simple strings in source code should be quoted with <strong>‘</strong></p></li>
+<li><p>All strings should be internationalization enabled. Please see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="http://pyqt.sourceforge.net/Docs/PyQt4/i18n.html">PyQT4 il8n</a></p></li>
+<li><p><a class="reference external" href="http://doc.qt.io/qt-4.8/linguist-manual.html">Linguist Manual</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
 </div>
 </div>
 
@@ -226,10 +340,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="community-guidelines_code_style.html" class="btn btn-neutral float-right" title="Code Style Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="community-guidelines_api.html" class="btn btn-neutral float-right" title="API Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="community-pr_workflow.html" class="btn btn-neutral float-left" title="Pull Request Workflow" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="community-versioning-api.html" class="btn btn-neutral float-left" title="Versioning and API Stability" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

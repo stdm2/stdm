@@ -2,3 +2,5 @@
 
 Introduction
 ============
+
+STDM cookbook recipes – small Python programs, with example code samples to get you started on the framework, and give you in-depth knowledge.

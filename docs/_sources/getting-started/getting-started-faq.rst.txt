@@ -6,7 +6,46 @@ Frequently Asked Questions
 General
 -------
 
+**What is the role of STDM in Pro-Poor Land Administration?**
+
+The STDM is an initiative of UN-HABITAT to support pro-poor land administration. STDM is meant specifically for developing countries, countries with very little cadastral coverage in urban areas with slums, or in rural customary areas. It is also meant for post conflict areas. The focus of STDM is on all relationships between people and land, independently from the level of formalization, or legality of those relationships.
+
+**Which other GLTN tool is integrated in the STDM implementation process?**
+
+Participatory enumeration is used during the data gathering stage in the implementation cycle of STDM. Rather than creating specialist teams of external enumerators, it is often more effective to have people from the community be the main enumerators. Participatory enumeration is becoming an increasingly popular way to promote tenure security.
+
+**What are the possible application areas of STDM?**
+
+STDM can be customized and applied in different contexts including post conflict/disaster, property management/taxation, natural resource management/monitoring, land re-adjustment, enumeration and settlement upgrading, and customary/group rights.
+
+**How does STDM contribute to supporting Sustainable Development?**
+
+STDM can contribute to sustainable development through the provision of a flexible, unconventional land administration. This can be seen as an extension to existing Land Administration Systems (LAS). This may have a start in community based mapping processes, supporting the mapping of land and property rights. STDM can make it possible for all citizens to be covered by some form of LAS, including the poor, thereby improving the land management capacity of the land industry, as well as addressing upcoming challenges such as climate change. Also, STDM can contribute to poverty reduction, as the land rights and claims of the poor are brought into the formal system over time. It will improve their security of tenure, increase conflict resolution, limit forced evictions, and help the poor to engage with the land industry in undertaking land management such as city wide slum upgrading or rural land management.
+
 
 
 Software
 --------
+
+**What Operating System(OS) does it run on?**
+
+The STDM plugin can run in virtually any environment that QGIS supports; these are Windows, Linux and Mac OS X. In addition, the database server software i.e. PostgreSQL and PostGIS are also available in these environments.
+
+**Which installers are currently available?**
+
+Currently, there are only Windows installers (for 32-bit and 64-bit OS architectures) but in future, we will provide installers for both Linux and Mac OS X platforms.
+
+**Which programming language is it written in?**
+
+The STDM plugin has been written in Python programming language. However, the version of Python is based on the one that is bundled in QGIS.
+
+**What is the STDM architecture?**
+
+The STDM tool is based on a client-server architecture, where PostreSQL/PostGIS represents the backend and QGIS represents the client interface. The spatial data repository and access to database objects is handled by PostgreSQL/PostGIS, whereas, QGIS provides the underlying GIS framework for visualizing and managing STDM entities.
+
+**How can I suggest significant enhancements or changes to STDM software?**
+
+We would like to hear from our current STDM users on any software bugs encountered or proposal to feature enhancements. There are two options of posting this to the STDM developers:
+
+* Use the stdm-dev mailing list, OR
+* Create a `new issue on GitHub <https://github.com/gltn/stdm/issues/>`_  and tag it as an **enhancement** or **bug**. You will need to have a valid GitHub account or create one if it does not exist

@@ -1,0 +1,4 @@
+.. _doc_community_guidelines_api:
+
+API Guidelines
+========================

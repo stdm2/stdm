@@ -7,6 +7,6 @@ Get in touch with the community
 
 -   To receive important news and updates around STDM in general, subscribe to: `OSGEO STDM Announcements <http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-announce/>`_.
 
--   If you find an issue working with STDM, please report it so that developers can check and fix it. To report a bug, subscribe to: `OSGEO STDM Issues <http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-dev/>`_ or post it in `GitHub Issues <https://github.com/gltn/stdm/issues/>`_
+-   If you find an issue working with STDM, please report it so that developers can check and fix it. To report a bug, subscribe to: `OSGEO STDM Issues <http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-dev/>`_ or post it in `GitHub Issues <https://github.com/gltn/stdm2/issues/>`_
 
--   To browse the source codes or extend the core platform, access the repository here: `GitHub Repo <https://github.com/gltn/stdm/>`_
+-   To browse the source codes or extend the core platform, access the repository here: `GitHub Repo <https://github.com/gltn/stdm2/>`_

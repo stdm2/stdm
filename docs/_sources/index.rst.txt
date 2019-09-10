@@ -18,27 +18,41 @@ Table of Contents
    :caption: General
 
    intro/index
+   intro/intro-current-version   
+   intro/intro-roadmap
+   intro/intro-community
+   intro/intro-licensing
 
 
 .. toctree::
    :maxdepth: 1
    :caption: Getting Started
 
-   getting-started/index
+   getting-started/getting-started-basics
+   getting-started/getting-started-faq
+   getting-started/getting-started-installation-before
+   getting-started/getting-started-installation-guide
+   getting-started/getting-started-tutorial
+   getting-started/getting-started-examples
    
 
 .. toctree::
    :maxdepth: 1
    :caption: Users
 
-   user-docs/users-introduction
+   user-docs/stdm-desktop/introduction   
+   user-docs/stdm-mobile/introduction   
+   user-docs/stdm-online/introduction 
 
 
 .. toctree::
    :maxdepth: 1
    :caption: API
 
-   api-docs/index
+   api-docs/api-introduction
+   api-docs/api-methods
+   api-docs/api-constants
+   api-docs/api-doc
 
 
 .. toctree::

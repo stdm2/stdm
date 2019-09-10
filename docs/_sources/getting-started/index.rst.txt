@@ -1,13 +1,14 @@
-Getting Started
+First Steps
 ===============
 
 .. toctree::
    :maxdepth: 1
    :name: toc-about
 
-   getting-started-first-steps
+   getting-started-basics
    getting-started-faq
    getting-started-installation-guide
+   getting-started-installation
    getting-started-tutorial
    getting-started-examples
 

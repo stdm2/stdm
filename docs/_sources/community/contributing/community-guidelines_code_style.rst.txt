@@ -1,0 +1,123 @@
+.. _doc_guidelines_community_code_style:
+
+Code Style Guidelines
+========================
+
+.. todo:: Code Style Guidelines
+
+
+
+STDM Coding Standards
+Rev. 10.01.2017
+Compliance
+*    Coding must follow PEP8 guidelines. I implore you to read these guidelines with regard to imports, use of spaces instead of tabs, class names, function and method names, maximum line length etc. Please enforce these guidelines when refactoring code
+*    Use the Python documentation guide for Docstring
+Source Code Header
+Ensure that each module file contains the following header information with a brief narrative of what the module does. See an example below:
+
+::
+
+ # -*- coding: utf-8 -*-
+ """
+ /***************************************************************************
+ Name                 : Document Viewer
+ Description          : GUI classes for managing and viewing supporting
+                        documents.
+ Date                 : 8/September/2014
+ copyright            : (C) 2014 by UN-Habitat and implementing partners.
+                        See the accompanying file CONTRIBUTORS.txt in the root
+ email                : stdm@unhabitat.org
+  ***************************************************************************/
+ 
+ /***************************************************************************
+  *                                                                         *
+  *   This program is free software; you can redistribute it and/or modify  *
+  *   it under the terms of the GNU General Public License as published by  *
+  *   the Free Software Foundation; either version 2 of the License, or     *
+  *   (at your option) any later version.                                   *
+  *                                                                         *
+  ***************************************************************************/
+
+
+Ordering of Imports
+---------------------
+
+Please adhere to the following import rules:
+
+* Do not use * to import everything e.g. from PyQt4.QtGui import *
+* Either import the individual module names e.g. from PyQt4.QtGui import QWidget 
+* Import the whole package and use the namespace to reference a module such as:
+
+::
+from PyQt4 import QtGui
+Widget = QtGui.QWidget
+
+
+Imports should be made in the following order:
+
+*    Core Python imports e.g. import sys
+*    Third party imports e.g. from PyQt4.QtCore import QObject
+*    Application imports e.g. from data import Connection
+
+Doc strings and comments
+----------------------------
+
+All code should be self-documenting. Please take special note and follow these PEP guidelines and sphinx documents:
+
+* http://www.python.org/dev/peps/pep-0287/
+* http://sphinx-doc.org/markup/desc.html#info-field-lists
+* http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+
+The following specific guidelines also apply:
+
+* Docstrings must be triple quoted with “””
+* Inline comments should start with a # and a single space
+* Comments should be complete sentences ending with a full stop/period
+
+Example:
+
+::
+
+ def absolute_document_path(self, document_widget):
+ """Build the absolute document path using info from the document widget.
+         :param document_widget: Instance of document widget.
+ 	        :type document_widget: DocumentWidget
+         :return: Absolute path of the supporting document.
+         :rtype: str
+         """
+
+
+Annotating API changes and additions
+---------------------------------------
+
+Whenever you add or change a module, class, function or method, you should annotate it accordingly. The method for doing this is described on the Sphinx paragraph markup page. Here are a couple of examples:
+
+*  Adding a new module
+
+::
+
+ “””Mapping function utilities.
+ 
+ .. versionadded:: 1.2
+ “””
+
+
+*  Adding a new method to a class
+
+::
+
+ """Return user-friendly column name.
+ 
+ .. versionadded:: 1.2
+ """
+
+
+Strings and internationalization
+-------------------------------------
+
+- Simple strings in source code should be quoted with **'**
+- All strings should be internationalization enabled. Please see:
+
+    * `PyQT4 il8n <http://pyqt.sourceforge.net/Docs/PyQt4/i18n.html>`_
+    
+    * `Linguist Manual <http://doc.qt.io/qt-4.8/linguist-manual.html>`_

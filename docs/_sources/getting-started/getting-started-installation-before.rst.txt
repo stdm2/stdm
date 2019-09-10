@@ -1,0 +1,24 @@
+.. _doc_getting_started_installation_before:
+
+Before Installing
+==================
+
+**What do I need to install to have a fully functional STDM?**
+
+In the provided installation package, there are core components of software packages that are mandatory for an installation of STDM 2.0 to work properly.
+The following need to be installed:
+
+* QGIS (current version 3.6)
+* PostgreSQL (current version 10.1)
+* PostGIS (current version 2.5)
+* Sample data – this is optional if you want to have a sample data to manipulate and test features of STDM.
+
+**Do I need to uninstall previous installation of the above software?**
+
+This is not necessary if you are working with QGIS 2.14 or higher and PostgreSQL 9.5 or higher. If you have lower versions, we cannot guarantee the full functionality of STDM. However, in such a case, you need to do the following:
+
+1. Start QGIS normally and wait for it to load
+2. Download the latest version of `STDM plugin from GitHub <https://github.com/gltn/stdm/>`_ by adding STDM download repository in the QGIS Plugin manager. See instructions here `Download From repository <https://stdm.gltn.net/docs/1_7/index.htm#t=installingfromgltnpluginreposito.htm>`_
+3. Using PostgreSQL database Administrator i.e pgAdmin (), create a new database called stdm.
+4. Install PostGIS extension created for the PostgreSQL version you are using. You can download it from `PostGIS site <http://postgis.net/install/>`_.
+5. On the QGIS window, check if STDM is enabled on the menu and toolbar 

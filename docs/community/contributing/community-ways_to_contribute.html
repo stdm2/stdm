@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Pull Request Workflow" href="community-pr_workflow.html" />
@@ -89,19 +90,35 @@
             
               <p class="caption"><span class="caption-text">General</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-current-version.html">Current Version and Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-community.html">Get in touch with the community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-licensing.html">Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting-started/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-before.html">Before Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-guide.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-tutorial.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-examples.html">Examples</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Users</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/users-introduction.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/index.html">API Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-methods.html">Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#module-test_primes">TestAPI Primes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recipes</span></p>
 <ul>
@@ -117,14 +134,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#coding-style">Coding style</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documentation-policies">Documentation policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tests">Tests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#running-tests">Running tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Running tests</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#writing-tests">Writing tests</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="community-pr_workflow.html">Pull Request Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-versioning-api.html">Versioning and API Stability</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-code_style_guidelines.html">Code Style Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-documentation_guidelines.html">Documentation Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_code_style.html">Code Style Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_api.html">API Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_recipes.html">Recipes Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_documentation.html">Documentation Guidelines</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communcation Channels</a></li>
@@ -200,22 +219,20 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Double check that you are reading the most recent version of this document at
-<a class="reference external" href="https://docs.scrapy.org/en/master/contributing.html">https://docs.scrapy.org/en/master/contributing.html</a></p>
+<a class="reference external" href="https://gltn.github.io/stdm2/contributing.html">Contributing</a></p>
 </div>
 <p>There are many ways to contribute to Scrapy. Here are some of them:</p>
 <ul class="simple">
-<li><p>Blog about Scrapy. Tell the world how you’re using Scrapy. This will help
-newcomers with more examples and will help the Scrapy project to increase its
+<li><p>Blog about STDM 2.0. Tell the world how you’re using STDM 2.0. This will help
+getting new patners/newcomers with more profiles/examples and will help the STDM 2.0 project to increase its
 visibility.</p></li>
-<li><p>Report bugs and request features in the <a class="reference external" href="https://github.com/scrapy/scrapy/issues">issue tracker</a>, trying to follow
+<li><p>Report bugs and request features in the <a class="reference external" href="https://github.com/gltn/stdm2/issues">issue tracker</a>, trying to follow
 the guidelines detailed in <a class="reference internal" href="#reporting-bugs">Reporting bugs</a> below.</p></li>
 <li><p>Submit patches for new functionalities and/or bug fixes. Please read
 <a class="reference internal" href="#writing-patches"><span class="std std-ref">Writing patches</span></a> and <a class="reference internal" href="#id2">Submitting patches</a> below for details on how to
 write and submit a patch.</p></li>
-<li><p>Join the <a class="reference external" href="https://reddit.com/r/scrapy">Scrapy subreddit</a> and share your ideas on how to
-improve Scrapy. We’re always open to suggestions.</p></li>
-<li><p>Answer Scrapy questions at
-<a class="reference external" href="https://stackoverflow.com/questions/tagged/scrapy">Stack Overflow</a>.</p></li>
+<li><p>Join the <a class="reference external" href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-user">STDM 2.0 mailing list</a> and share your ideas on how to
+improve STDM 2.0. We’re always open to suggestions.</p></li>
 </ul>
 </div>
 <div class="section" id="reporting-bugs">
@@ -223,35 +240,29 @@ improve Scrapy. We’re always open to suggestions.</p></li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please report security issues <strong>only</strong> to
-<a class="reference external" href="mailto:scrapy-security&#37;&#52;&#48;googlegroups&#46;com">scrapy-security<span>&#64;</span>googlegroups<span>&#46;</span>com</a>. This is a private list only open to
-trusted Scrapy developers, and its archives are not public.</p>
+[email address]. This is a private list only open to
+trusted STDM developers, and its archives are not public.</p>
 </div>
 <p>Well-written bug reports are very helpful, so keep in mind the following
 guidelines when you’re going to report a new bug.</p>
 <ul class="simple">
-<li><p>check the :ref: FAQ first to see if your issue is addressed in a
-well-known question</p></li>
-<li><p>if you have a general question about scrapy usage, please ask it at
-<a class="reference external" href="https://stackoverflow.com/questions/tagged/scrapy">Stack Overflow</a>
-(use “scrapy” tag).</p></li>
-<li><p>check the <a class="reference external" href="https://github.com/scrapy/scrapy/issues">open issues</a> to see if the issue has already been reported. If it
+<li><p>Check the <a class="reference external" href="https://github.com/gltn/stdm2/issues/">GitHub Issues</a> to see if the issue has already been reported. If it
 has, don’t dismiss the report, but check the ticket history and comments. If
 you have additional useful information, please leave a comment, or consider
-<a class="reference internal" href="#writing-patches"><span class="std std-ref">sending a pull request</span></a> with a fix.</p></li>
-<li><p>search the <a class="reference external" href="https://groups.google.com/forum/#!forum/scrapy-users">scrapy-users</a> list and <a class="reference external" href="https://reddit.com/r/scrapy">Scrapy subreddit</a> to see if it has
-been discussed there, or if you’re not sure if what you’re seeing is a bug.
-You can also ask in the <code class="docutils literal notranslate"><span class="pre">#scrapy</span></code> IRC channel.</p></li>
-<li><p>write <strong>complete, reproducible, specific bug reports</strong>. The smaller the test
+<a class="reference internal" href="community-pr_workflow.html#doc-community-pr-workflow"><span class="std std-ref">Pull Request Workflow</span></a> with a fix.</p></li>
+<li><p>Search the <a class="reference external" href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-dev/">OSGEO STDM Issues</a> list to see if it has
+been discussed there, or if you’re not sure if what you’re seeing is a bug.</p></li>
+<li><p>Write <strong>complete, reproducible, specific bug reports</strong>. The smaller the test
 case, the better. Remember that other developers won’t have your project to
 reproduce the bug, so please include all relevant files required to reproduce
 it. See for example StackOverflow’s guide on creating a
 <a class="reference external" href="https://stackoverflow.com/help/mcve">Minimal, Complete, and Verifiable example</a> exhibiting the issue.</p></li>
-<li><p>the most awesome way to provide a complete reproducible example is to
+<li><p>The most awesome way to provide a complete reproducible example is to
 send a pull request which adds a failing test case to the
 Scrapy testing suite (see <a class="reference internal" href="#submitting-patches"><span class="std std-ref">Submitting patches</span></a>).
 This is helpful even if you don’t have an intention to
 fix the issue yourselves.</p></li>
-<li><p>include the output of <code class="docutils literal notranslate"><span class="pre">scrapy</span> <span class="pre">version</span> <span class="pre">-v</span></code> so developers working on your bug
+<li><p>Include the <strong>STDM version</strong> so developers working on your bug
 know exactly which version and platform it occurred on, which is often very
 helpful for reproducing it, or knowing if it was already fixed.</p></li>
 </ul>
@@ -260,7 +271,7 @@ helpful for reproducing it, or knowing if it was already fixed.</p></li>
 <span id="id1"></span><h1>Writing patches<a class="headerlink" href="#writing-patches" title="Permalink to this headline">¶</a></h1>
 <p>The better a patch is written, the higher the chances that it’ll get accepted and the sooner it will be merged.</p>
 <p>Well-written patches should:</p>
-<ul>
+<ul class="simple">
 <li><p>contain the minimum amount of code required for the specific change. Small
 patches are easier to review and merge. So, if you’re doing more than one
 change (or bug fix), please consider submitting one patch per change. Do not
@@ -274,13 +285,7 @@ the documentation changes in the same patch.  See <a class="reference internal" 
 below.</p></li>
 <li><p>if you’re adding a private API, please add a regular expression to the
 <code class="docutils literal notranslate"><span class="pre">coverage_ignore_pyobjects</span></code> variable of <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code> to exclude the new
-private API from documentation coverage checks.</p>
-<p>To see if your private API is skipped properly, generate a documentation
-coverage report as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tox</span> <span class="o">-</span><span class="n">e</span> <span class="n">docs</span><span class="o">-</span><span class="n">coverage</span>
-</pre></div>
-</div>
-</li>
+private API from documentation coverage checks.</p></li>
 </ul>
 </div>
 <div class="section" id="submitting-patches">
@@ -295,13 +300,12 @@ patch, but it’s always good to have a patch ready to illustrate your arguments
 and show that you have put some additional thought into the subject. A good
 starting point is to send a pull request on GitHub. It can be simple enough to
 illustrate your idea, and leave documentation/tests for later, after the idea
-has been validated and proven useful. Alternatively, you can start a
-conversation in the <a class="reference external" href="https://reddit.com/r/scrapy">Scrapy subreddit</a> to discuss your idea first.</p>
+has been validated and proven useful.</p>
 <p>Sometimes there is an existing pull request for the problem you’d like to
 solve, which is stalled for some reason. Often the pull request is in a
-right direction, but changes are requested by Scrapy maintainers, and the
+right direction, but changes are requested by STDM maintainers, and the
 original pull request author hasn’t had time to address them.
-In this case consider picking up this pull request: open
+In this case consider picking up this pull request: <code class="docutils literal notranslate"><span class="pre">open</span></code>
 a new pull request with all commits from the original pull request, as well as
 additional changes to address the raised issues. Doing so helps a lot; it is
 not considered rude as soon as the original author is acknowledged by keeping
@@ -311,11 +315,11 @@ by running <code class="docutils literal notranslate"><span class="pre">git</spa
 (replace ‘upstream’ with a remote name for scrapy repository,
 <code class="docutils literal notranslate"><span class="pre">$PR_NUMBER</span></code> with an ID of the pull request, and <code class="docutils literal notranslate"><span class="pre">$BRANCH_NAME_TO_CREATE</span></code>
 with a name of the branch you want to create locally).
-See also: <a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally">https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally</a>.</p>
+See also: <a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally">Modifying an inactive pull request locally</a>.</p>
 <p>When writing GitHub pull requests, try to keep titles short but descriptive.
-E.g. For bug #411: “Scrapy hangs if an exception raises in start_requests”
-prefer “Fix hanging when exception occurs in start_requests (#411)”
-instead of “Fix for #411”. Complete titles make it easy to skim through
+<strong>E.g. For bug #411: “Scrapy hangs if an exception raises in start_requests”</strong>
+prefer <strong>“Fix hanging when exception occurs in start_requests (#411)”</strong>
+instead of <strong>“Fix for #411”</strong>. Complete titles make it easy to skim through
 the issue tracker.</p>
 <p>Finally, try to keep aesthetic changes (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> compliance, unused imports
 removal, etc) in separate commits from functional changes. This will make pull
@@ -331,7 +335,7 @@ Scrapy:</p>
 readability.</p></li>
 <li><p>Don’t put your name in the code you contribute; git provides enough
 metadata to identify author of the code.
-See <a class="reference external" href="https://help.github.com/articles/setting-your-username-in-git/">https://help.github.com/articles/setting-your-username-in-git/</a> for
+See <a class="reference external" href="https://help.github.com/articles/setting-your-username-in-git/">Setting your username in git</a> for
 setup instructions.</p></li>
 </ul>
 </div>
@@ -352,9 +356,24 @@ the docstring in files within the <code class="docutils literal notranslate"><sp
 <div class="section" id="tests">
 <h1>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h1>
 <p>Tests are implemented using the <cite>Unit-testing framework</cite></p>
-<div class="section" id="running-tests">
-<span id="id4"></span><h2>Running tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
-<p>Unittests</p>
+<div class="admonition-todo admonition" id="index-2">
+<span id="running-tests"></span><p class="admonition-title">Todo</p>
+<p>[Unittests]</p>
+</div>
+<div class="admonition-todo admonition" id="index-3">
+<p class="admonition-title">Todo</p>
+<p>[Pytest examples]</p>
+</div>
+<div class="section" id="id4">
+<h2>Running tests<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-todo admonition" id="index-4">
+<p class="admonition-title">Todo</p>
+<p>[Unittests]</p>
+</div>
+<div class="admonition-todo admonition" id="index-5">
+<p class="admonition-title">Todo</p>
+<p>[Coverage reports]</p>
+</div>
 <p>To see coverage report install <a class="reference external" href="https://pypi.python.org/pypi/coverage">coverage</a> (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">coverage</span></code>) and run:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">report</span></code></p>
@@ -366,14 +385,14 @@ the docstring in files within the <code class="docutils literal notranslate"><sp
 <p>All functionality (including new features and bug fixes) must include a test
 case to check that it works as expected, so please include tests for your
 patches if you want them to get accepted sooner.</p>
-<p>Scrapy uses unit-tests, which are located in the <a class="reference external" href="https://github.com/scrapy/scrapy/tree/master/tests">tests/</a> directory.
+<p>STDM uses unit-tests, which are located in the <code class="docutils literal notranslate"><span class="pre">tests/</span></code> directory.
 Their module name typically resembles the full path of the module they’re
-testing. For example, the item loaders code is in:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scrapy</span><span class="o">.</span><span class="n">loader</span>
+testing. For example, the item <code class="docutils literal notranslate"><span class="pre">connect</span></code> code is in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``pscopg2.connect``
 </pre></div>
 </div>
 <p>And their unit-tests are in:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tests</span><span class="o">/</span><span class="n">test_loader</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tests</span><span class="o">/</span><span class="n">test_connect</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 </div>
