@@ -1,4 +1,0 @@
-.. _doc_community_documentation_guidelines:
-
-Documentation Guidelines
-========================

@@ -1,4 +1,0 @@
-.. _doc_api_constants:
-
-Constants
-=========
