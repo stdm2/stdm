@@ -98,6 +98,9 @@ deploy:
     skip_cleanup: true
     github_token: $STDM_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep_history: true
+    local_dir: docs # The folder that needs to be deployed
+    repo: kngeno/stdm2 # Add your username/project_name here
+    target_branch: gh-pages # Tell Travis to deploy on the gh-pages branch
     on:
       branch: master
 
