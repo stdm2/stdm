@@ -1,5 +1,6 @@
+****************
 Contributing
-============
+****************
 
 .. toctree::
    :maxdepth: 1
@@ -7,8 +8,5 @@ Contributing
 
    community-ways_to_contribute
    community-pr_workflow
-   community-versioning-api
    community-guidelines_code_style
-   community-guidelines_api
-   community-guidelines_recipes
-   community-guidelines_documentation
+   community-guidelines_gui_style

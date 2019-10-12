@@ -3,4 +3,32 @@
 Pull Request Workflow
 =====================
 
-.. todo:: Pull Request Workflow
+Joining STDM 2.0 Open Source project, it's very likely that you won't get direct access to push commits or branches up to the repository itself. 
+So, instead, you'll fork the repo, make the changes on your version of the repo, and then "pull request" your changes back to the original.
+
+Here are the steps to take:
+
+* First, visit its page on `STDM 2.0 GitHub <https://github.com/gltn/stdm2.git/>`_ and click the "Fork" icon in the upper 
+  right of the page. This will create a fork of the project under your user account. 
+
+* Next, clone your local version down to your local machine.
+  ``git clone git@github.com:gltn/stdm2.git``
+
+* In order to make it easy to keep your fork in sync with the original, add the original as a remote:
+  ``git remote add upstream https://github.com/gltn/stdm2.git``.
+
+* Create a local branch, but first make sure you are up-to-dat with the original repo
+    - ``git checkout master``
+    - ``git fetch upstream``
+    - ``git merge upstream/master``
+    - ``git push origin master``
+
+    - Now you can spin up your new branch with the form ``fix/some-bug`` or ``feature/add-cool-thing`` and make your changes in that branch and commit them.:
+
+    - ``git checkout -b my-feature-name``
+
+* Make your changes, commit them, and push up to your forked repo for that branch.
+
+* Now, you can create a pull request in the GitHub user interface. Visit your repo on GitHub and click the "New Pull Request" button, and you can create your PR from there.
+
+* Make sure to explain the purpose, context, and anything else necessary for reviewers to understand the PR. See :ref:`submitting-patches`.

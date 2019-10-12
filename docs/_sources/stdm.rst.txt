@@ -1,0 +1,40 @@
+stdm package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    stdm.app
+    stdm.core
+    stdm.gui
+    stdm.tests
+
+Submodules
+----------
+
+stdm.plugin module
+------------------
+
+.. automodule:: stdm.plugin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+stdm.resources module
+---------------------
+
+.. automodule:: stdm.resources
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: stdm
+    :members:
+    :undoc-members:
+    :show-inheritance:

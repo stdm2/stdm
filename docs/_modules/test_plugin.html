@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -105,22 +106,27 @@
 </ul>
 <p class="caption"><span class="caption-text">Users</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html">STDM Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../api-docs/api-introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-methods.html">Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-constants.html">Constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-doc.html">TestAPI Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-doc.html#module-test_primes">TestAPI Primes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-doc.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">stdm</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recipes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/index.html">Recipes Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-how-to-create.html">How to Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Unittests</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-how-to-create.html">How to Create Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-autodoc.html">Test STDM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-autodoc.html#module-test_plugin">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-autodoc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Community</span></p>
 <ul>
@@ -198,14 +204,14 @@
 <span class="kn">import</span> <span class="nn">psycopg2</span>
 
 
-<div class="viewcode-block" id="PluginTest"><a class="viewcode-back" href="../api-docs/api-doc.html#test_plugin.PluginTest">[docs]</a><span class="k">class</span> <span class="nc">PluginTest</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-<div class="viewcode-block" id="PluginTest.setUp"><a class="viewcode-back" href="../api-docs/api-doc.html#test_plugin.PluginTest.setUp">[docs]</a>    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="PluginTest"><a class="viewcode-back" href="../unittests-docs/unittest-autodoc.html#test_plugin.PluginTest">[docs]</a><span class="k">class</span> <span class="nc">PluginTest</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+<div class="viewcode-block" id="PluginTest.setUp"><a class="viewcode-back" href="../unittests-docs/unittest-autodoc.html#test_plugin.PluginTest.setUp">[docs]</a>    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span></div>
 
-    <span class="k">def</span> <span class="nf">test_general</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<div class="viewcode-block" id="PluginTest.test_general"><a class="viewcode-back" href="../unittests-docs/unittest-autodoc.html#test_plugin.PluginTest.test_general">[docs]</a>    <span class="k">def</span> <span class="nf">test_general</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="PluginTest.tearDown"><a class="viewcode-back" href="../api-docs/api-doc.html#test_plugin.PluginTest.tearDown">[docs]</a>    <span class="k">def</span> <span class="nf">tearDown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="PluginTest.tearDown"><a class="viewcode-back" href="../unittests-docs/unittest-autodoc.html#test_plugin.PluginTest.tearDown">[docs]</a>    <span class="k">def</span> <span class="nf">tearDown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div></div>
 
 

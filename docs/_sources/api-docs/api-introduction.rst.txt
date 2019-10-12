@@ -3,4 +3,8 @@
 Introduction
 =============
 
-.. todo:: Introduction to STDM API
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   desktop/desktop-introduction

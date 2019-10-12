@@ -1,0 +1,13 @@
+.. _desktop_introduction:
+
+Desktop API 
+================================
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   desktop-apps
+   desktop-core
+   desktop-gui

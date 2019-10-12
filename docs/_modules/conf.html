@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>conf &mdash; STDM 2.0 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/_static/css/theme-color.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> STDM 2.0
+          
+
+          
+            
+            <img src="../_static/STDM_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/intro-current-version.html">Current Version and Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/intro-roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/intro-community.html">Get in touch with the community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/intro-licensing.html">Licensing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-basics.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-installation-before.html">Before Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-installation-guide.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-tutorial.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-online/introduction.html">STDM Online</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">stdm</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recipes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-how-to-create.html">How to Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Unittests</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-how-to-create.html">How to Create Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-autodoc.html">Test STDM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-autodoc.html#module-test_plugin">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-autodoc.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/community-communication-channels.html">Communication Channels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/community-resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">STDM 2.0</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>conf</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for conf</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Configuration file for the Sphinx documentation builder.</span>
+<span class="c1">#</span>
+<span class="c1"># This file only contains a selection of the most common options. For a full</span>
+<span class="c1"># list see the documentation:</span>
+<span class="c1"># http://www.sphinx-doc.org/en/master/config</span>
+
+<span class="c1"># -- Path setup --------------------------------------------------------------</span>
+
+<span class="c1"># If extensions (or modules to document with autodoc) are in another directory,</span>
+<span class="c1"># add these directories to sys.path here. If the directory is relative to the</span>
+<span class="c1"># documentation root, use os.path.abspath to make it absolute, like shown here.</span>
+<span class="c1">#</span>
+<span class="c1"># import os</span>
+<span class="c1"># import sys</span>
+<span class="c1"># sys.path.insert(0, os.path.abspath(&#39;.&#39;))</span>
+
+
+<span class="c1"># -- Project information -----------------------------------------------------</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../..&#39;</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../../stdm/&#39;</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../../stdm/tests/&#39;</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../../stdm/tests/gui/&#39;</span><span class="p">))</span>
+<span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;STDM 2.0&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s1">&#39;2019, UN-HABITAT&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;GLTN&#39;</span>
+
+<span class="c1"># The full version, including alpha/beta/rc tags</span>
+<span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;2.0&#39;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;1.0&#39;</span>
+
+
+<span class="c1"># -- General configuration ---------------------------------------------------</span>
+
+<span class="c1"># Add any Sphinx extension module names here, as strings. They can be</span>
+<span class="c1"># extensions coming with Sphinx (named &#39;sphinx.ext.*&#39;) or your custom</span>
+<span class="c1"># ones.</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.githubpages&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+    <span class="c1"># &#39;sphinx.ext.napoleon&#39;,</span>
+    <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.ifconfig&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.mathjax&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.autosummary&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.inheritance_diagram&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.coverage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinxcontrib.napoleon&#39;</span>
+    <span class="c1"># &#39;numpydoc&#39;</span>
+    <span class="c1"># &#39;rinoh.frontend.sphinx&#39;</span>
+<span class="p">]</span>
+
+<span class="n">todo_include_todos</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="s1">&#39;.rst&#39;</span>
+<span class="n">master_doc</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span>
+<span class="n">add_function_parentheses</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_templates&#39;</span><span class="p">]</span>
+
+<span class="c1"># List of patterns, relative to source directory, that match files and</span>
+<span class="c1"># directories to ignore when looking for source files.</span>
+<span class="c1"># This pattern also affects html_static_path and html_extra_path.</span>
+<span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Ignore Mercurial repo.</span>
+    <span class="s1">&#39;.hg&#39;</span><span class="p">,</span>
+	<span class="c1"># Ignore setup.py output.</span>
+	<span class="s1">&#39;build&#39;</span><span class="p">,</span>
+	<span class="s1">&#39;dist&#39;</span><span class="p">,</span>
+	<span class="s1">&#39;CodeChat.egg-info&#39;</span><span class="p">,</span>
+	<span class="c1">#Ignore Sphinx output.</span>
+	<span class="s1">&#39;_build&#39;</span><span class="p">,</span>
+	<span class="c1">#Ignore this file’s output.</span>
+	<span class="s1">&#39;sphinx-enki-info.txt&#39;</span><span class="p">,</span>
+	<span class="c1">#Ignore file from external web site.</span>
+	<span class="s1">&#39;ez_setup.py&#39;</span><span class="p">,</span>
+	<span class="c1">#Ignore HTML – the license and test output.</span>
+	<span class="s1">&#39;**.html&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+
+<span class="c1"># -- Options for HTML output -------------------------------------------------</span>
+
+<span class="c1"># The theme to use for HTML and HTML Help pages.  See the documentation for</span>
+<span class="c1"># a list of builtin themes.</span>
+<span class="c1">#</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_themes&quot;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;canonical_url&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;analytics_id&#39;</span><span class="p">:</span> <span class="s1">&#39;UA-XXXXXXX-1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;logo_only&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;display_version&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;prev_next_buttons_location&#39;</span><span class="p">:</span> <span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;style_external_links&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="c1"># &#39;vcs_pageview_mode&#39;: &#39;&#39;,</span>
+    <span class="c1"># &#39;style_nav_header_background&#39;: &#39;white&#39;,</span>
+    <span class="c1"># Toc options</span>
+    <span class="s1">&#39;collapse_navigation&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;sticky_navigation&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;navigation_depth&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s1">&#39;includehidden&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;titles_only&#39;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
+
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;_static/images/STDM_logo.png&#39;</span>
+
+<span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
+<span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
+<span class="c1"># so a file named &quot;default.css&quot; will overwrite the builtin &quot;default.css&quot;.</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># -- Options for LaTeX output ---------------------------------------------</span>
+
+<span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
+<span class="c1"># The paper size (&#39;letterpaper&#39; or &#39;a4paper&#39;).</span>
+<span class="c1">#&#39;papersize&#39;: &#39;letterpaper&#39;,</span>
+
+<span class="c1"># The font size (&#39;10pt&#39;, &#39;11pt&#39; or &#39;12pt&#39;).</span>
+<span class="c1">#&#39;pointsize&#39;: &#39;10pt&#39;,</span>
+
+<span class="c1"># Additional stuff for the LaTeX preamble.</span>
+<span class="c1">#&#39;preamble&#39;: &#39;&#39;,</span>
+
+<span class="c1"># Latex figure (float) alignment</span>
+<span class="c1">#&#39;figure_align&#39;: &#39;htbp&#39;,</span>
+<span class="p">}</span>
+
+<span class="c1"># Grouping the document tree into LaTeX files. List of tuples</span>
+<span class="c1"># (source start file, target name, title,</span>
+<span class="c1">#  author, documentclass [howto, manual, or own class]).</span>
+<span class="n">latex_documents</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="n">master_doc</span><span class="p">,</span> <span class="s1">&#39;STDM-Documentation.tex&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;STDM Documentation&#39;</span><span class="p">,</span>
+   <span class="sa">u</span><span class="s1">&#39;UN-Habitat&#39;</span><span class="p">,</span> <span class="s1">&#39;manual&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="c1"># The name of an image file (relative to this directory) to place at the top of</span>
+<span class="c1"># the title page.</span>
+<span class="c1">#latex_logo = None</span>
+
+<span class="c1"># For &quot;manual&quot; documents, if this is true, then toplevel headings are parts,</span>
+<span class="c1"># not chapters.</span>
+<span class="c1">#latex_use_parts = False</span>
+
+<span class="c1"># If true, show page references after internal links.</span>
+<span class="c1">#latex_show_pagerefs = False</span>
+
+<span class="c1"># If true, show URL addresses after external links.</span>
+<span class="c1">#latex_show_urls = False</span>
+
+<span class="c1"># Documents to append as an appendix to all manuals.</span>
+<span class="c1">#latex_appendices = []</span>
+
+<span class="c1"># If false, no module index is generated.</span>
+<span class="c1">#latex_domain_indices = True</span>
+
+
+<span class="c1"># -- Options for manual page output ---------------------------------------</span>
+
+<span class="c1"># One entry per manual page. List of tuples</span>
+<span class="c1"># (source start file, name, description, authors, manual section).</span>
+<span class="n">man_pages</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">master_doc</span><span class="p">,</span> <span class="s1">&#39;stdmdocumentation&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;STDM Documentation Documentation&#39;</span><span class="p">,</span>
+     <span class="p">[</span><span class="n">author</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="c1"># If true, show URL addresses after external links.</span>
+<span class="c1">#man_show_urls = False</span>
+
+
+<span class="c1"># -- Options for Texinfo output -------------------------------------------</span>
+
+<span class="c1"># Grouping the document tree into Texinfo files. List of tuples</span>
+<span class="c1"># (source start file, target name, title, author,</span>
+<span class="c1">#  dir menu entry, description, category)</span>
+<span class="n">texinfo_documents</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="n">master_doc</span><span class="p">,</span> <span class="s1">&#39;STDMDocumentation&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;STDM Documentation Documentation&#39;</span><span class="p">,</span>
+   <span class="n">author</span><span class="p">,</span> <span class="s1">&#39;STDMDocumentation&#39;</span><span class="p">,</span> <span class="s1">&#39;One line description of project.&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Miscellaneous&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="c1"># Documents to append as an appendix to all manuals.</span>
+<span class="c1">#texinfo_appendices = []</span>
+
+<span class="c1"># If false, no module index is generated.</span>
+<span class="c1">#texinfo_domain_indices = True</span>
+
+<span class="c1"># How to display URL addresses: &#39;footnote&#39;, &#39;no&#39;, or &#39;inline&#39;.</span>
+<span class="c1">#texinfo_show_urls = &#39;footnote&#39;</span>
+
+<span class="c1"># If true, do not generate a @detailmenu in the &quot;Top&quot; node&#39;s menu.</span>
+<span class="c1">#texinfo_no_detailmenu = False</span>
+
+
+<span class="c1"># -- Options for Epub output ----------------------------------------------</span>
+
+<span class="c1"># Bibliographic Dublin Core info.</span>
+<span class="n">epub_title</span> <span class="o">=</span> <span class="n">project</span>
+<span class="n">epub_author</span> <span class="o">=</span> <span class="n">author</span>
+<span class="n">epub_publisher</span> <span class="o">=</span> <span class="n">author</span>
+<span class="n">epub_copyright</span> <span class="o">=</span> <span class="n">copyright</span>
+
+<span class="c1"># The basename for the epub file. It defaults to the project name.</span>
+<span class="c1">#epub_basename = project</span>
+
+<span class="c1"># The HTML theme for the epub output. Since the default themes are not optimized</span>
+<span class="c1"># for small screen space, using the same theme for HTML and epub output is</span>
+<span class="c1"># usually not wise. This defaults to &#39;epub&#39;, a theme designed to save visual</span>
+<span class="c1"># space.</span>
+<span class="c1">#epub_theme = &#39;epub&#39;</span>
+
+<span class="c1"># The language of the text. It defaults to the language option</span>
+<span class="c1"># or &#39;en&#39; if the language is not set.</span>
+<span class="c1">#epub_language = &#39;&#39;</span>
+
+<span class="c1"># The scheme of the identifier. Typical schemes are ISBN or URL.</span>
+<span class="c1">#epub_scheme = &#39;&#39;</span>
+
+<span class="c1"># The unique identifier of the text. This can be a ISBN number</span>
+<span class="c1"># or the project homepage.</span>
+<span class="c1">#epub_identifier = &#39;&#39;</span>
+
+<span class="c1"># A unique identification for the text.</span>
+<span class="c1">#epub_uid = &#39;&#39;</span>
+
+<span class="c1"># A tuple containing the cover image and cover page html template filenames.</span>
+<span class="c1">#epub_cover = ()</span>
+
+<span class="c1"># A sequence of (type, uri, title) tuples for the guide element of content.opf.</span>
+<span class="c1">#epub_guide = ()</span>
+
+<span class="c1"># HTML files that should be inserted before the pages created by sphinx.</span>
+<span class="c1"># The format is a list of tuples containing the path and title.</span>
+<span class="c1">#epub_pre_files = []</span>
+
+<span class="c1"># HTML files shat should be inserted after the pages created by sphinx.</span>
+<span class="c1"># The format is a list of tuples containing the path and title.</span>
+<span class="c1">#epub_post_files = []</span>
+
+<span class="c1"># A list of files that should not be packed into the epub file.</span>
+<span class="n">epub_exclude_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;search.html&#39;</span><span class="p">]</span>
+
+<span class="c1"># The depth of the table of contents in toc.ncx.</span>
+<span class="c1">#epub_tocdepth = 3</span>
+
+<span class="c1"># Allow duplicate toc entries.</span>
+<span class="c1">#epub_tocdup = True</span>
+
+<span class="c1"># Choose between &#39;default&#39; and &#39;includehidden&#39;.</span>
+<span class="c1">#epub_tocscope = &#39;default&#39;</span>
+
+<span class="c1"># Fix unsupported image types using the Pillow.</span>
+<span class="c1">#epub_fix_images = False</span>
+
+<span class="c1"># Scale large images.</span>
+<span class="c1">#epub_max_image_width = 0</span>
+
+<span class="c1"># How to display URL addresses: &#39;footnote&#39;, &#39;no&#39;, or &#39;inline&#39;.</span>
+<span class="c1">#epub_show_urls = &#39;inline&#39;</span>
+
+<span class="c1"># If false, no index is generated.</span>
+<span class="c1">#epub_use_index = True</span>
+
+
+<span class="c1"># Example configuration for intersphinx: refer to the Python standard library.</span>
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;python&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;https://docs.python.org/3&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)}</span>
+
+<div class="viewcode-block" id="setup"><a class="viewcode-back" href="../conf.html#conf.setup">[docs]</a><span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_css_file</span><span class="p">(</span><span class="s1">&#39;_static/css/theme-color.css&#39;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, UN-HABITAT
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

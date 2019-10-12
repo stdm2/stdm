@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GUI Style Guidelines &mdash; STDM 2.0 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Communication Channels" href="../community-communication-channels.html" />
+    <link rel="prev" title="Code Style Guidelines" href="community-guidelines_code_style.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> STDM 2.0
+          
+
+          
+            
+            <img src="../../_static/STDM_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-current-version.html">Current Version and Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-community.html">Get in touch with the community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/intro-licensing.html">Licensing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-before.html">Before Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-guide.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-tutorial.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recipes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-how-to-create.html">How to Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Unittests</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html">How to Create Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html">Test STDM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#module-test_plugin">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html">Ways to Contribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-pr_workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_code_style.html">Code Style Guidelines</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GUI Style Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#qgis-developer-human-interface-guidelines-hig">QGIS Developer Human Interface Guidelines (HIG)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#microsoft-inductive-user-interface-iui">Microsoft Inductive User Interface (IUI)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communication Channels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">STDM 2.0</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Contributing</a> &raquo;</li>
+        
+      <li>GUI Style Guidelines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/community/contributing/community-guidelines_gui_style.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gui-style-guidelines">
+<span id="doc-guidelines-community-gui-style"></span><h1>GUI Style Guidelines<a class="headerlink" href="#gui-style-guidelines" title="Permalink to this headline">¶</a></h1>
+<p>In order for all graphical user interface elements to appear consistent and to all the user to instinctively use dialogs,
+it is important that the following guidelines are followed in layout and design of GUIs.</p>
+<div class="section" id="qgis-developer-human-interface-guidelines-hig">
+<h2>QGIS Developer Human Interface Guidelines (HIG)<a class="headerlink" href="#qgis-developer-human-interface-guidelines-hig" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Group related elements using group boxes: Try to identify elements that can be grouped together and then use group boxes with a label to identify the topic of that group.
+Avoid using group boxes with only a singlewidget / item inside.</p></li>
+<li><p>Capitalise first letter only in labels, tool tips, descriptive text, and other non-heading or title text:  Theseshould be written as a phrase with leading capital letter,
+and all remaining words written with lower casefirst letters, unless they are nouns</p></li>
+<li><p>Capitalize all words in Titles (group box, tab, list view columns, and so on), Functions (menu items, but-tons),
+and other selectable items (combobox items, listbox items, tree list items, and so on):  Capitalize allwords, except prepositions that are shorter than five letters (for example,
+‘with’ but ‘Without’), conjunctions(for example, and, or, but), and articles (a, an, the). However, always capitalize the first and last word.</p></li>
+<li><p>Do not end labels for widgets or group boxes with a colon: Adding a colon causes visual noise and does notimpart additional meaning, so don’t use them.</p></li>
+<li><p>Keep harmful actions away from harmless ones:  If you have actions for ‘delete’, ‘remove’ etc, try to im-pose adequate space between the harmful action
+and innocuous actions so that the users is less likely toinadvertently click on the harmful action.</p></li>
+<li><p>Always use a QButtonBox for ‘OK’, ‘Cancel’ etc buttons: Using a button box will ensure that the order of‘OK’ and ‘Cancel’ etc,
+buttons is consistent with the operating system / locale / desktop environment thatthe user is using.</p></li>
+<li><p>Tabs should not be nested.  If you use tabs, follow the style of the tabs used in QgsVectorLayerProperties /QgsProjectProperties etc.
+i.e. tabs at top with icons at 22x22.</p></li>
+<li><p>Widget stacks should be avoided if at all possible.  They cause problems with layouts and inexplicable (tothe user) resizing of dialogs to accommodate widgets that are not visible.</p></li>
+<li><p>Try to avoid technical terms and rather use a laymans equivalent e.g.  use the word ‘Opacity’ rather than‘Alpha Channel’ (contrived example), ‘Text’ instead of ‘String’ and so on.</p></li>
+<li><p>Use consistent iconography. If you need an icon or icon elements, please contact Robert Szczepanek on themailing list for assistance.</p></li>
+<li><p>Place long lists of widgets into scroll boxes. No dialog should exceed 580 pixels in height and 1000 pixelsin width.</p></li>
+<li><p>Separate advanced options from basic ones. Novice users should be able to quickly access the items neededfor basic activities without needing to concern themselves with complexity
+of advanced features. Advancedfeatures should either be located below a dividing line, or placed onto a separate tab.</p></li>
+<li><p>Don’t add options for the sake of having lots of options.  Strive to keep the user interface minimalistic anduse sensible defaults.</p></li>
+<li><p>If clicking a button will spawn a new dialog, an ellipsis char (… )  should be suffixed to the button text.Note,
+make sure to use the U+2026 Horizontal Ellipsis char instead of three periods.</p></li>
+</ul>
+</div>
+<div class="section" id="microsoft-inductive-user-interface-iui">
+<h2>Microsoft Inductive User Interface (IUI)<a class="headerlink" href="#microsoft-inductive-user-interface-iui" title="Permalink to this headline">¶</a></h2>
+<p>This topic describes the user interface model known as inductive user interface (IUI). Also called inductive navigation,
+the IUI model suggests how to make software applications simpler by breaking features into screens or pages that are easy to explain and understand.</p>
+<ul class="simple">
+<li><p>The first step in designing an IUI is to take a feature or set of features and break it into separate screens. Each screen should be focused on a single task,
+called the screen’s primary task.</p></li>
+<li><p>Each screen should be titled with a concise and explicit statement of its primary task. This can be a direct instruction or a question you want the user to answer.</p></li>
+<li><p>The title of the screen is very important. Whether the product uses windows, web-style pages, dialogs, or another design, the title should not be allowed to scroll off.</p></li>
+<li><p>Make the screen’s contents suit the task</p></li>
+<li><p>Provide a clear exit from the screen</p></li>
+<li><p>The last step in designing a screen is to provide links to secondary tasks, which are features that do not directly accomplish the primary task, but are related to the screen.
+For example, if the primary task on a screen is to write a letter, secondary tasks on that screen might be to look up a mailing address or print an envelope.</p></li>
+<li><p>When designing software that follows the IUI model, you should create a template to use as a guide for every screen. The inductive model does not dictate that you use
+any particular template.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../community-communication-channels.html" class="btn btn-neutral float-right" title="Communication Channels" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="community-guidelines_code_style.html" class="btn btn-neutral float-left" title="Code Style Guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, UN-HABITAT
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

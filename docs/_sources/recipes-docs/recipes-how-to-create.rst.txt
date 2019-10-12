@@ -1,0 +1,36 @@
+.. _doc_recipes_how_to_create:
+
+How to Create
+===============================
+
+.. toctree::
+   :maxdepth: 1
+   :name: recipes-how-to-create
+
+What are STDM Cookbook Recipes?
+------------------------------------
+STDM cookbook recipes are small Python programs, with example code samples to get you started on the framework, and give you in-depth knowledge.
+
+
+How do you create STDM Cookbook Recipes?
+-------------------------------------------
+
+* Check on :ref:`doc_community_ways_to_contribute`
+
+* Check on `QGIS API Reference <https://qgis.org/pyqgis/3.0/>`_ and `PyQGIS Cookbook <https://docs.qgis.org/3.4/en/docs/pyqgis_developer_cookbook/index.html/>`_ 
+
+* Check on `QGIS Coding Standards <https://docs.qgis.org/3.4/en/docs/developers_guide/codingstandards.html/>`_
+
+* Select an abstract functionality that you want to add as a recipe.
+
+* Validate the recipe through :ref:`doc_unittests_how_to_create` 
+
+* You can now write the STDM recipe.
+
+* Document the STDM recipe :ref:`doc_guidelines_community_code_style` 
+
+
+
+.. history
+.. authors
+.. license

@@ -1,0 +1,162 @@
+.. _doc_unittests_how_to_create:
+
+How to Create Unittest 
+===============================
+
+.. toctree::
+   :maxdepth: 1
+   :name: unittests-how-to-create
+
+What is a Unittest?
+------------------------------------
+* A unittest is a way of testing a unit - the smallest piece of code that can be logically isolated in a system.  
+
+* A unit is the smallest testable part of any software. 
+
+* In object-oriented programming, the smallest unit is a method, which may belong to a base/ super class, abstract class or derived/ child class. 
+
+* Some treat a module of an application as a unit. This is to be discouraged as there will probably be many individual units within that module.
+
+* Tests in STDM 2.0 are implemented using the `Unit-testing framework`
+
+
+.. _creating-tests:
+
+How do you create Unittests?
+------------------------------------
+
+* Write test cases that are independent of each other. For example, if a class depends on a database, do not write a case that interacts with the database to test the class. 
+
+* Test only one code at a time.
+
+* Follow clear and consistent naming conventions for your unit tests
+
+* In case of a change in code in any module, ensure there is a corresponding unit Test Case for the module, and the module passes the tests before changing the implementation
+    
+* Bugs identified during unit testing must be fixed before proceeding to the next phase in SDLC
+
+* Adopt a "test as your code" approach. The more code you write without testing, the more paths you have to check for errors.
+
+* Isolate the development environment from the test environment.
+
+* In addition to writing cases to verify the behavior, write cases to ensure the performance of the code.
+
+
+.. _writing-tests:
+
+Writing tests using Unittest
+-----------------------------
+
+
+* Unittest has been built into the Python standard library since version 2.1. You’ll probably see it in commercial Python applications and open-source projects.
+
+* Unittest contains both a testing framework and a test runner. unittest has some important requirements for writing and executing tests.
+
+* Unittest requires that:
+
+    - You put your tests into classes as methods
+
+    - You use a series of special assertion methods in the unittest.TestCase class instead of the built-in assert statement
+
+* All functionality (including new features and bug fixes) must include a test case to check that it works as expected, so please include tests for your
+  patches if you want them to get accepted sooner.
+
+* STDM uses unit-tests, which are located in the ``tests/`` directory. Their module name typically resembles the full path of the module they're
+  testing. For example, the item ``connect`` code is in::
+
+    ``pscopg2.connect``
+
+  And their unit-tests are in::
+
+    tests/test_connect.py
+
+
+.. _running-tests:
+
+Running tests 
+----------------------------
+
+* To convert the earlier example to a unittest test case, you would have to:
+
+    - Import ``unittest`` from the standard library
+
+    - Create a class called ``TestSum`` that inherits from the ``TestCase`` class
+
+    - Convert the test functions into methods by adding self as the first argument
+
+    - Change the assertions to use the ``self.assertEqual()`` method on the ``TestCase`` class
+
+    - Change the command-line entry point to call ``unittest.main()``
+
+* At the bottom of the test file, we have this code:
+
+.. code-block::
+
+    if __name__ == '__main__':
+        unittest.main()
+
+* The unittest module can be used from the command line to run tests from modules, classes or even individual test methods:
+
+    - ``python -m unittest test_module1 test_module2``
+    - ``python -m unittest test_module.TestClass``
+    - ``python -m unittest test_module.TestClass.test_method``
+
+* Test modules can be specified by file path as well:
+
+    - ``python -m unittest tests/test_something.py``
+
+* References
+
+    - `Getting Started With Testing in Python <https://realpython.com/python-testing//>`_
+
+Coverage
+----------------------------
+
+* Coverage.py is one of the most popular code coverage tools for Python. It uses code analysis tools and tracing hooks provided in Python standard library to measure coverage. 
+
+* To see coverage report install `coverage`_ (``pip install coverage``) and run:
+
+* Now run your program with coverage as ``coverage run my_program.py arg1 arg2``
+
+* Next to get coverage data, execute ``coverage report -m``
+
+* Here is a sample coverage data output
+
+.. code-block::
+
+    Name                    Stmts   Miss  Cover   Missing
+    ——————————————————-
+    test_stdm_module.py      20      4     80%   33-35, 39
+    test_plugin.py           56      6     89%   17-23
+    ——————————————————-
+    TOTAL                    76      10    87%
+
+* Generate report in html file: 
+     
+    ``coverage html``
+
+* See output of ``coverage --help`` for more options like html or xml report.
+
+* References
+
+    - `Coverage <https://pypi.python.org/pypi/coverage/>`_
+
+    - `Simple Unittests using Coverage <https://developer.ibm.com/recipes/tutorials/testing-and-code-coverage-with-python/>`_
+
+
+
+
+.. _issue tracker: https://github.com/gltn/stdm2/issues
+.. _Twisted unit-testing framework: https://twistedmatrix.com/documents/current/core/development/policy/test-standard.html
+.. _AUTHORS: https://github.com/gtln/stdm2/blob/master/CONTRIBUTORS
+.. _tests/: https://github.com/gltn/stdm2/tree/master/tests
+.. _open issues: https://github.com/gltn/stdm2/issues
+.. _PEP 257: https://www.python.org/dev/peps/pep-0257/
+.. _pull request: https://help.github.com/en/articles/creating-a-pull-request
+.. _pytest: https://docs.pytest.org/en/latest/usage.html
+.. _pytest-xdist: https://docs.pytest.org/en/3.0.0/xdist.html
+
+
+.. history
+.. authors
+.. license

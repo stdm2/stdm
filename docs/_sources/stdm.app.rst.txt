@@ -1,0 +1,22 @@
+stdm.app package
+================
+
+Submodules
+----------
+
+stdm.app.stdm\_app module
+-------------------------
+
+.. automodule:: stdm.app.stdm_app
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: stdm.app
+    :members:
+    :undoc-members:
+    :show-inheritance:
