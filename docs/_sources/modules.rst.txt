@@ -1,5 +1,5 @@
-stdm
-====
+STDM
+======
 
 .. toctree::
    :maxdepth: 4
