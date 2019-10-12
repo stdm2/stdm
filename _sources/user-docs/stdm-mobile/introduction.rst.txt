@@ -5,7 +5,3 @@ STDM Mobile
    :maxdepth: 1
    :name: toc-intro-stdm-mobile
 
-
-.. history
-.. authors
-.. license

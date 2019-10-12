@@ -33,10 +33,11 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Versioning and API Stability" href="community-versioning-api.html" />
+    <link rel="next" title="Code Style Guidelines" href="community-guidelines_code_style.html" />
     <link rel="prev" title="Ways to Contribute" href="community-ways_to_contribute.html" /> 
 </head>
 
@@ -98,7 +99,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-before.html">Before Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-guide.html">Installation</a></li>
@@ -107,42 +108,37 @@
 </ul>
 <p class="caption"><span class="caption-text">Users</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-methods.html">Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-constants.html">Constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html">TestAPI Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#module-test_primes">TestAPI Primes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recipes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/index.html">Recipes Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-how-to-create.html">How to Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Unittests</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html">How to Create Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html">Test STDM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#module-test_plugin">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Community</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html">Ways to Contribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#reporting-bugs">Reporting bugs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#writing-patches">Writing patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#submitting-patches">Submitting patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#coding-style">Coding style</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#documentation-policies">Documentation policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#tests">Tests</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Pull Request Workflow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-versioning-api.html">Versioning and API Stability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-guidelines_code_style.html">Code Style Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_api.html">API Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_recipes.html">Recipes Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_documentation.html">Documentation Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_gui_style.html">GUI Style Guidelines</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communcation Channels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communication Channels</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community-resources.html">Resources</a></li>
 </ul>
 
@@ -212,10 +208,32 @@
             
   <div class="section" id="pull-request-workflow">
 <span id="doc-community-pr-workflow"></span><h1>Pull Request Workflow<a class="headerlink" href="#pull-request-workflow" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-todo admonition" id="index-0">
-<p class="admonition-title">Todo</p>
-<p>Pull Request Workflow</p>
-</div>
+<p>Joining STDM 2.0 Open Source project, it’s very likely that you won’t get direct access to push commits or branches up to the repository itself.
+So, instead, you’ll fork the repo, make the changes on your version of the repo, and then “pull request” your changes back to the original.</p>
+<p>Here are the steps to take:</p>
+<ul class="simple">
+<li><p>First, visit its page on <a class="reference external" href="https://github.com/gltn/stdm2.git/">STDM 2.0 GitHub</a> and click the “Fork” icon in the upper
+right of the page. This will create a fork of the project under your user account.</p></li>
+<li><p>Next, clone your local version down to your local machine.
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:gltn/stdm2.git</span></code></p></li>
+<li><p>In order to make it easy to keep your fork in sync with the original, add the original as a remote:
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">https://github.com/gltn/stdm2.git</span></code>.</p></li>
+<li><dl class="simple">
+<dt>Create a local branch, but first make sure you are up-to-dat with the original repo</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">master</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">upstream/master</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code></p></li>
+<li><p>Now you can spin up your new branch with the form <code class="docutils literal notranslate"><span class="pre">fix/some-bug</span></code> or <code class="docutils literal notranslate"><span class="pre">feature/add-cool-thing</span></code> and make your changes in that branch and commit them.:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">my-feature-name</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Make your changes, commit them, and push up to your forked repo for that branch.</p></li>
+<li><p>Now, you can create a pull request in the GitHub user interface. Visit your repo on GitHub and click the “New Pull Request” button, and you can create your PR from there.</p></li>
+<li><p>Make sure to explain the purpose, context, and anything else necessary for reviewers to understand the PR. See <a class="reference internal" href="community-ways_to_contribute.html#submitting-patches"><span class="std std-ref">Submitting patches</span></a>.</p></li>
+</ul>
 </div>
 
 
@@ -226,7 +244,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="community-versioning-api.html" class="btn btn-neutral float-right" title="Versioning and API Stability" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="community-guidelines_code_style.html" class="btn btn-neutral float-right" title="Code Style Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="community-ways_to_contribute.html" class="btn btn-neutral float-left" title="Ways to Contribute" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

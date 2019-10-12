@@ -1,0 +1,141 @@
+.. _doc_recipes_examples:
+
+Examples
+===============================
+
+.. toctree::
+   :maxdepth: 1
+   :name: recipes-examples
+
+
+Creating Vector Layers
+--------------------------------
+
+There are several ways to generate a vector layer dataset:
+
+- The ``QgsVectorFileWriter`` class: A convenient class for writing vector files to disk, using either a 
+  static call to ``writeAsVectorFormat()`` which saves the whole vector layer or creating an instance of the 
+  class and issue calls to ``addFeature()``. This class supports all the vector formats that OGR supports 
+  (``GeoPackage, Shapefile, GeoJSON, KML`` and others).
+
+- The ``QgsVectorLayer`` class: instantiates a data provider that interprets the supplied path (url) of the 
+  data source to connect to and access the data. It can be used to create temporary, memory-based layers (``memory``) 
+  and connect to OGR datasets (``ogr``), databases (``postgres, spatialite, mysql, mssql``) and more 
+  (``wfs, gpx, delimitedtext…``).
+
+
+* From an instance of QgsVectorFileWriter
+
+.. code-block::
+    :caption: Creating Vector Layers
+    :name: create_vectorfilewriter.py
+
+    # Write to a GeoPackage (default)
+    error = QgsVectorFileWriter.writeAsVectorFormat(layer, "/path/to/folder/my_data", "")
+    if error[0] == QgsVectorFileWriter.NoError:
+        print("success!")
+
+    # Write to an ESRI Shapefile format dataset using UTF-8 text encoding
+    error = QgsVectorFileWriter.writeAsVectorFormat(layer, "/path/to/folder/my_esridata",
+                                                    "UTF-8", driverName="ESRI Shapefile")
+    if error[0] == QgsVectorFileWriter.NoError:
+        print("success again!")
+
+
+*  From an instance of QgsVectorLayer
+
+.. code-block::
+    :caption: Creating Vector Layers
+    :name: create_vectorlayer.py
+
+    from qgis.PyQt.QtCore import QVariant
+
+    # define fields for feature attributes. A QgsFields object is needed
+    fields = QgsFields()
+    fields.append(QgsField("first", QVariant.Int))
+    fields.append(QgsField("second", QVariant.String))
+
+    """ create an instance of vector file writer, which will create the vector file.
+    Arguments:
+    1. path to new file (will fail if exists already)
+    2. encoding of the attributes
+    3. field map
+    4. geometry type - from WKBTYPE enum
+    5. layer's spatial reference (instance of
+    QgsCoordinateReferenceSystem) - optional
+    6. driver name for the output file """
+
+    writer = QgsVectorFileWriter("my_shapes.shp", "UTF-8", fields, QgsWkbTypes.Point, driverName="ESRI Shapefile")
+
+    if writer.hasError() != QgsVectorFileWriter.NoError:
+        print("Error when creating shapefile: ",  w.errorMessage())
+
+    # add a feature
+    fet = QgsFeature()
+
+    fet.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(10,10)))
+    fet.setAttributes([1, "text"])
+    writer.addFeature(fet)
+
+    # delete the writer to flush features to disk
+    del writer
+
+
+* A recipe to find date range for the current month:
+
+.. code-block::
+   :caption: Find Date Range
+   :name: date_range.py
+
+    from datetime import datetime, date, timedelta
+    import calendar
+
+    def get_month_range(start_date=None):
+        if start_date is None:
+            start_date = date.today().replace(day=1)
+        days_in_month = calendar.monthrange(start_date.year, start_date.month)[1]
+        end_date = start_date + timedelta(days=days_in_month)
+        return (start_date, end_date)
+
+    first_day, last_day = get_month_range()
+    a_day = timedelta(days=1)
+    while first_day < last_day:
+        print(first_day)
+        first_day += a_day
+
+    def daterange(start, stop, step):
+        while start < stop:
+            yield start
+            start += step
+
+    for d in daterange(date(2012, 8, 1), date(2012, 8, 11), timedelta(days=1)):
+        print(d)
+
+    for d in daterange(datetime(2012, 8, 1), datetime(2012, 8, 3), timedelta(minutes=30)):
+        print(d)
+
+
+
+* A recipe for reading an XML document, making changes, and writing it back out:
+
+.. code-block::
+   :caption: Manipulating XML Document
+   :name: manipulate_xml.py
+
+    from xml.etree.ElementTree import parse, Element
+    doc = parse('pred.xml')
+    root = doc.getroot()
+
+    # Remove a few elements
+    root.remove(root.find('sri'))
+    root.remove(root.find('cr'))
+
+    # Insert a new element after <nm>...</nm>
+    nm_index = root.getchildren().index(root.find('nm'))
+
+    e = Element('spam')
+    e.text = 'This is a test'
+    root.insert(nm_index + 1, e)
+
+    # Write back to a file
+    doc.write('newpred.xml', xml_declaration=True)

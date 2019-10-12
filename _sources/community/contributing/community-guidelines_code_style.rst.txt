@@ -3,16 +3,70 @@
 Code Style Guidelines
 ========================
 
-.. todo:: Code Style Guidelines
 
+PEP 8
+---------------------------------------
+
+Please follow these :pep:`8` coding conventions when writing code for inclusion in
+STDM:
+
+* Use 4 spaces per indentation level.
+
+* Limit all lines to a maximum of 79 characters.
+
+* Surround top-level function and class definitions with two blank lines.
+
+* Code in the core Python distribution should always use UTF-8 (Python 3).
+
+* Imports should usually be on separate lines and should be grouped in the following order:
+
+    - Standard library imports.
+    - Related third party imports.
+    - Local application/library specific imports.
+
+
+* Module level "dunders" (i.e. names with two leading and two trailing underscores) such as ``__all__, __author__, __version__,`` etc. 
+  It should be placed after the module docstring but before any import statements except ``from __future__`` imports.
+
+* Avoid extraneous whitespace in the following situations:
+
+    - Immediately inside parentheses, brackets or braces.
+    - Between a trailing comma and a following close parenthesis.
+    - Immediately before a comma, semicolon, or colon
+    - Immediately before the open parenthesis that starts an indexing or slicing:
+    - More than one space around an assignment (or other) operator to align it with another.
+
+* Trailing commas are usually optional, except they are mandatory when making a tuple of one element.
+
+* Comments that contradict the code are worse than no comments. Always make a priority of keeping the comments up-to-date when the code changes!
+
+* Conventions for writing good documentation strings (a.k.a. "docstrings") are immortalized in `PEP 257 <https://www.python.org/dev/peps/pep-0257/>`_.
+
+* Write docstrings for modules, functions, classes, and methods.  Docstrings can be omitted for special methods ``(e.g. __init__() or __str__())`` where the
+  meaning is obvious.
+
+* Always decide whether a class's methods and instance variables should be public or non-public.
 
 
 STDM Coding Standards
-Rev. 10.01.2017
-Compliance
-*    Coding must follow PEP8 guidelines. I implore you to read these guidelines with regard to imports, use of spaces instead of tabs, class names, function and method names, maximum line length etc. Please enforce these guidelines when refactoring code
-*    Use the Python documentation guide for Docstring
+-------------------------------
+
+* Don't put your name in the code you contribute; git provides enough
+  metadata to identify author of the code.
+  See `Setting your username in git <https://help.github.com/articles/setting-your-username-in-git/>`_ for
+  setup instructions.
+
+Compliance Revision 10.01.2017
+...................................
+
+* Coding must follow PEP8 guidelines. I implore you to read these guidelines with regard to imports, 
+  use of spaces instead of tabs, class names, function and method names, maximum line length etc. Please enforce these guidelines when refactoring code.
+
+* Use the Python documentation guide for Docstring
+
 Source Code Header
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Ensure that each module file contains the following header information with a brief narrative of what the module does. See an example below:
 
 ::
@@ -40,7 +94,7 @@ Ensure that each module file contains the following header information with a br
 
 
 Ordering of Imports
----------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Please adhere to the following import rules:
 
@@ -60,7 +114,7 @@ Imports should be made in the following order:
 *    Application imports e.g. from data import Connection
 
 Doc strings and comments
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 All code should be self-documenting. Please take special note and follow these PEP guidelines and sphinx documents:
 
@@ -88,7 +142,7 @@ Example:
 
 
 Annotating API changes and additions
----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Whenever you add or change a module, class, function or method, you should annotate it accordingly. The method for doing this is described on the Sphinx paragraph markup page. Here are a couple of examples:
 
@@ -113,7 +167,7 @@ Whenever you add or change a module, class, function or method, you should annot
 
 
 Strings and internationalization
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Simple strings in source code should be quoted with **'**
 - All strings should be internationalization enabled. Please see:

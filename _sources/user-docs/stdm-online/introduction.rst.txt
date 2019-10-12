@@ -4,8 +4,3 @@ STDM Online
 .. toctree::
    :maxdepth: 1
    :name: toc-intro-stdm-online
-
-
-.. history
-.. authors
-.. license

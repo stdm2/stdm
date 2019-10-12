@@ -1,0 +1,22 @@
+stdm.core package
+=================
+
+Submodules
+----------
+
+stdm.core.security module
+-------------------------
+
+.. automodule:: stdm.core.security
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: stdm.core
+    :members:
+    :undoc-members:
+    :show-inheritance:

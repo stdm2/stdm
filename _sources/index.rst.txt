@@ -1,6 +1,6 @@
-=================================
+********************************
 STDM 2.0 Documentation
-=================================
+********************************
 
 Welcome to STDM 2.0 documentation!
 
@@ -50,17 +50,26 @@ Table of Contents
    :caption: API
 
    api-docs/api-introduction
-   api-docs/api-methods
-   api-docs/api-constants
-   api-docs/api-doc
-
+   api-docs/api-documentation
+   modules
 
 .. toctree::
    :maxdepth: 1
    :glob:
    :caption: Recipes
 
-   recipes-docs/index
+   recipes-docs/recipes-how-to-create
+   recipes-docs/recipes-examples
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :caption: Unittests
+
+   unittests-docs/unittest-how-to-create
+   unittests-docs/unittest-examples
+   unittests-docs/unittest-autodoc
 
 
 .. toctree::

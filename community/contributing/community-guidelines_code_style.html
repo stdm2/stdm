@@ -33,11 +33,12 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="API Guidelines" href="community-guidelines_api.html" />
-    <link rel="prev" title="Versioning and API Stability" href="community-versioning-api.html" /> 
+    <link rel="next" title="GUI Style Guidelines" href="community-guidelines_gui_style.html" />
+    <link rel="prev" title="Pull Request Workflow" href="community-pr_workflow.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -98,7 +99,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-basics.html">Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-before.html">Before Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-installation-guide.html">Installation</a></li>
@@ -107,48 +108,44 @@
 </ul>
 <p class="caption"><span class="caption-text">Users</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-methods.html">Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-constants.html">Constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html">TestAPI Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#module-test_primes">TestAPI Primes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recipes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/index.html">Recipes Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-how-to-create.html">How to Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Unittests</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html">How to Create Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html">Test STDM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#module-test_plugin">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Community</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html">Ways to Contribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#reporting-bugs">Reporting bugs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#writing-patches">Writing patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#submitting-patches">Submitting patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#coding-style">Coding style</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#documentation-policies">Documentation policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-ways_to_contribute.html#tests">Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-pr_workflow.html">Pull Request Workflow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-versioning-api.html">Versioning and API Stability</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Code Style Guidelines</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ordering-of-imports">Ordering of Imports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#doc-strings-and-comments">Doc strings and comments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#annotating-api-changes-and-additions">Annotating API changes and additions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#strings-and-internationalization">Strings and internationalization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pep-8">PEP 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stdm-coding-standards">STDM Coding Standards</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#compliance-revision-10-01-2017">Compliance Revision 10.01.2017</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_api.html">API Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_recipes.html">Recipes Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_documentation.html">Documentation Guidelines</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communcation Channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_gui_style.html">GUI Style Guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communication Channels</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community-resources.html">Resources</a></li>
 </ul>
 
@@ -218,17 +215,63 @@
             
   <div class="section" id="code-style-guidelines">
 <span id="doc-guidelines-community-code-style"></span><h1>Code Style Guidelines<a class="headerlink" href="#code-style-guidelines" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-todo admonition" id="index-0">
-<p class="admonition-title">Todo</p>
-<p>Code Style Guidelines</p>
+<div class="section" id="pep-8">
+<h2>PEP 8<a class="headerlink" href="#pep-8" title="Permalink to this headline">¶</a></h2>
+<p>Please follow these <span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> coding conventions when writing code for inclusion in
+STDM:</p>
+<ul>
+<li><p>Use 4 spaces per indentation level.</p></li>
+<li><p>Limit all lines to a maximum of 79 characters.</p></li>
+<li><p>Surround top-level function and class definitions with two blank lines.</p></li>
+<li><p>Code in the core Python distribution should always use UTF-8 (Python 3).</p></li>
+<li><p>Imports should usually be on separate lines and should be grouped in the following order:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Standard library imports.</p></li>
+<li><p>Related third party imports.</p></li>
+<li><p>Local application/library specific imports.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Module level “dunders” (i.e. names with two leading and two trailing underscores) such as <code class="docutils literal notranslate"><span class="pre">__all__,</span> <span class="pre">__author__,</span> <span class="pre">__version__,</span></code> etc.
+It should be placed after the module docstring but before any import statements except <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">__future__</span></code> imports.</p></li>
+<li><p>Avoid extraneous whitespace in the following situations:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Immediately inside parentheses, brackets or braces.</p></li>
+<li><p>Between a trailing comma and a following close parenthesis.</p></li>
+<li><p>Immediately before a comma, semicolon, or colon</p></li>
+<li><p>Immediately before the open parenthesis that starts an indexing or slicing:</p></li>
+<li><p>More than one space around an assignment (or other) operator to align it with another.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Trailing commas are usually optional, except they are mandatory when making a tuple of one element.</p></li>
+<li><p>Comments that contradict the code are worse than no comments. Always make a priority of keeping the comments up-to-date when the code changes!</p></li>
+<li><p>Conventions for writing good documentation strings (a.k.a. “docstrings”) are immortalized in <a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a>.</p></li>
+<li><p>Write docstrings for modules, functions, classes, and methods.  Docstrings can be omitted for special methods <code class="docutils literal notranslate"><span class="pre">(e.g.</span> <span class="pre">__init__()</span> <span class="pre">or</span> <span class="pre">__str__())</span></code> where the
+meaning is obvious.</p></li>
+<li><p>Always decide whether a class’s methods and instance variables should be public or non-public.</p></li>
+</ul>
 </div>
-<p>STDM Coding Standards
-Rev. 10.01.2017
-Compliance
-*    Coding must follow PEP8 guidelines. I implore you to read these guidelines with regard to imports, use of spaces instead of tabs, class names, function and method names, maximum line length etc. Please enforce these guidelines when refactoring code
-*    Use the Python documentation guide for Docstring
-Source Code Header
-Ensure that each module file contains the following header information with a brief narrative of what the module does. See an example below:</p>
+<div class="section" id="stdm-coding-standards">
+<h2>STDM Coding Standards<a class="headerlink" href="#stdm-coding-standards" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Don’t put your name in the code you contribute; git provides enough
+metadata to identify author of the code.
+See <a class="reference external" href="https://help.github.com/articles/setting-your-username-in-git/">Setting your username in git</a> for
+setup instructions.</p></li>
+</ul>
+<div class="section" id="compliance-revision-10-01-2017">
+<h3>Compliance Revision 10.01.2017<a class="headerlink" href="#compliance-revision-10-01-2017" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Coding must follow PEP8 guidelines. I implore you to read these guidelines with regard to imports,
+use of spaces instead of tabs, class names, function and method names, maximum line length etc. Please enforce these guidelines when refactoring code.</p></li>
+<li><p>Use the Python documentation guide for Docstring</p></li>
+</ul>
+<div class="section" id="source-code-header">
+<h4>Source Code Header<a class="headerlink" href="#source-code-header" title="Permalink to this headline">¶</a></h4>
+<p>Ensure that each module file contains the following header information with a brief narrative of what the module does. See an example below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">/***************************************************************************</span>
@@ -251,8 +294,9 @@ Ensure that each module file contains the following header information with a br
 <span class="s2"> ***************************************************************************/</span>
 </pre></div>
 </div>
+</div>
 <div class="section" id="ordering-of-imports">
-<h2>Ordering of Imports<a class="headerlink" href="#ordering-of-imports" title="Permalink to this headline">¶</a></h2>
+<h4>Ordering of Imports<a class="headerlink" href="#ordering-of-imports" title="Permalink to this headline">¶</a></h4>
 <p>Please adhere to the following import rules:</p>
 <ul class="simple">
 <li><p>Do not use * to import everything e.g. from PyQt4.QtGui import *</p></li>
@@ -270,7 +314,7 @@ Widget = QtGui.QWidget</p>
 </ul>
 </div>
 <div class="section" id="doc-strings-and-comments">
-<h2>Doc strings and comments<a class="headerlink" href="#doc-strings-and-comments" title="Permalink to this headline">¶</a></h2>
+<h4>Doc strings and comments<a class="headerlink" href="#doc-strings-and-comments" title="Permalink to this headline">¶</a></h4>
 <p>All code should be self-documenting. Please take special note and follow these PEP guidelines and sphinx documents:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="http://www.python.org/dev/peps/pep-0287/">http://www.python.org/dev/peps/pep-0287/</a></p></li>
@@ -295,7 +339,7 @@ Widget = QtGui.QWidget</p>
 </div>
 </div>
 <div class="section" id="annotating-api-changes-and-additions">
-<h2>Annotating API changes and additions<a class="headerlink" href="#annotating-api-changes-and-additions" title="Permalink to this headline">¶</a></h2>
+<h4>Annotating API changes and additions<a class="headerlink" href="#annotating-api-changes-and-additions" title="Permalink to this headline">¶</a></h4>
 <p>Whenever you add or change a module, class, function or method, you should annotate it accordingly. The method for doing this is described on the Sphinx paragraph markup page. Here are a couple of examples:</p>
 <ul class="simple">
 <li><p>Adding a new module</p></li>
@@ -317,7 +361,7 @@ Widget = QtGui.QWidget</p>
 </div>
 </div>
 <div class="section" id="strings-and-internationalization">
-<h2>Strings and internationalization<a class="headerlink" href="#strings-and-internationalization" title="Permalink to this headline">¶</a></h2>
+<h4>Strings and internationalization<a class="headerlink" href="#strings-and-internationalization" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p>Simple strings in source code should be quoted with <strong>‘</strong></p></li>
 <li><p>All strings should be internationalization enabled. Please see:</p>
@@ -331,6 +375,8 @@ Widget = QtGui.QWidget</p>
 </ul>
 </div>
 </div>
+</div>
+</div>
 
 
            </div>
@@ -340,10 +386,10 @@ Widget = QtGui.QWidget</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="community-guidelines_api.html" class="btn btn-neutral float-right" title="API Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="community-guidelines_gui_style.html" class="btn btn-neutral float-right" title="GUI Style Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="community-versioning-api.html" class="btn btn-neutral float-left" title="Versioning and API Stability" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="community-pr_workflow.html" class="btn btn-neutral float-left" title="Pull Request Workflow" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

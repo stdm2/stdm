@@ -1,0 +1,75 @@
+.. _doc_unittests_examples:
+
+Examples
+===============================
+
+.. toctree::
+   :maxdepth: 1
+   :name: unittests-examples
+
+* A script to test STDM module:
+
+.. code-block::
+   :caption: Test STDM Module
+   :name: test_stdm_module.py
+
+    import unittest
+    from qgis.utils import iface
+    from stdm.gui.module import StdmModule
+    from stdm.tests.gui.custom_modules import (
+        ConfigurationModule,
+        SecurityModule
+    )
+
+
+    class TestStdmModule(unittest.TestCase):
+        def test_get_conf_module(self):
+            conf_mod = StdmModule.get(ConfigurationModule.key())
+            self.assertIsNotNone(conf_mod)
+
+        def test_get_sec_module(self):
+            sec_mod = StdmModule.get(SecurityModule.key())
+            self.assertIsNotNone(sec_mod)
+
+        def test_get_none_module(self):
+            ne_mod = StdmModule.get('NON_EXISTENT')
+            self.assertIsNone(ne_mod)
+
+        def test_action(self):
+            conf_mod_obj = ConfigurationModule(iface)
+            conf_act = conf_mod_obj.qaction()
+            self.assertTrue(conf_act.isCheckable())
+
+        def test_all(self):
+            self.assertEqual(len(StdmModule.all()), 2)
+
+
+* A script to test Database connection:
+
+.. code-block::
+   :caption: Test Database Connection
+   :name: test_plugin.py
+
+    import unittest
+    import sys
+    import utils
+    import os
+
+    import psycopg2
+
+
+    class PluginTest(unittest.TestCase):
+        def setUp(self):
+            self.conn = psycopg2.connect('')
+
+        def test_general(self):
+            self.assertEqual(1, 1)
+
+        def tearDown(self):
+            self.conn.close()
+
+
+    def run_all():
+        suite = unittest.TestSuite()
+        suite.addTests(unittest.makeSuite(PluginTest))
+        unittest.TextTestRunner(verbosity=3, stream=sys.stdout).run(suite)

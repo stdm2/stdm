@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -107,43 +108,40 @@
 </ul>
 <p class="caption"><span class="caption-text">Users</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-methods.html">Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-constants.html">Constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html">TestAPI Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#module-test_primes">TestAPI Primes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-doc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Recipes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/index.html">Recipes Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-how-to-create.html">How to Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Unittests</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html">How to Create Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html">Test STDM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#module-test_plugin">TestAPI Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-autodoc.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Community</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Contributing</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Ways to Contribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reporting-bugs">Reporting bugs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#writing-patches">Writing patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#submitting-patches">Submitting patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coding-style">Coding style</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#documentation-policies">Documentation policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tests">Tests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Running tests</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#writing-tests">Writing tests</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ways to Contribute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reporting-bugs">Reporting bugs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-policies">Documentation policies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-patches">Writing patches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submitting-patches">Submitting patches</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="community-pr_workflow.html">Pull Request Workflow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-versioning-api.html">Versioning and API Stability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="community-guidelines_code_style.html">Code Style Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_api.html">API Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_recipes.html">Recipes Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="community-guidelines_documentation.html">Documentation Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="community-guidelines_gui_style.html">GUI Style Guidelines</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../community-communication-channels.html">Communication Channels</a></li>
@@ -229,14 +227,13 @@ visibility.</p></li>
 <li><p>Report bugs and request features in the <a class="reference external" href="https://github.com/gltn/stdm2/issues">issue tracker</a>, trying to follow
 the guidelines detailed in <a class="reference internal" href="#reporting-bugs">Reporting bugs</a> below.</p></li>
 <li><p>Submit patches for new functionalities and/or bug fixes. Please read
-<a class="reference internal" href="#writing-patches"><span class="std std-ref">Writing patches</span></a> and <a class="reference internal" href="#id2">Submitting patches</a> below for details on how to
+<a class="reference internal" href="#writing-patches"><span class="std std-ref">Writing patches</span></a> and <a class="reference internal" href="#id3">Submitting patches</a> below for details on how to
 write and submit a patch.</p></li>
 <li><p>Join the <a class="reference external" href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-user">STDM 2.0 mailing list</a> and share your ideas on how to
 improve STDM 2.0. We’re always open to suggestions.</p></li>
 </ul>
-</div>
 <div class="section" id="reporting-bugs">
-<h1>Reporting bugs<a class="headerlink" href="#reporting-bugs" title="Permalink to this headline">¶</a></h1>
+<h2>Reporting bugs<a class="headerlink" href="#reporting-bugs" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please report security issues <strong>only</strong> to
@@ -267,8 +264,22 @@ know exactly which version and platform it occurred on, which is often very
 helpful for reproducing it, or knowing if it was already fixed.</p></li>
 </ul>
 </div>
+<div class="section" id="documentation-policies">
+<span id="id1"></span><h2>Documentation policies<a class="headerlink" href="#documentation-policies" title="Permalink to this headline">¶</a></h2>
+<p>For reference documentation of API members (classes, methods, etc.) use
+docstrings and make sure that the Sphinx documentation uses the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">autodoc</a>
+extension to pull the docstrings. API reference documentation should follow
+docstring conventions (<a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a>) and be IDE-friendly: short, to the point,
+and it may provide short examples.</p>
+<p>Other types of documentation, such as tutorials or topics, should be covered in
+files within the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory. This includes documentation that is
+specific to an API member, but goes beyond API reference documentation.</p>
+<p>In any case, if something is covered in a docstring, use the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">autodoc</a>
+extension to pull the docstring into the documentation instead of duplicating
+the docstring in files within the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory.</p>
+</div>
 <div class="section" id="writing-patches">
-<span id="id1"></span><h1>Writing patches<a class="headerlink" href="#writing-patches" title="Permalink to this headline">¶</a></h1>
+<span id="id2"></span><h2>Writing patches<a class="headerlink" href="#writing-patches" title="Permalink to this headline">¶</a></h2>
 <p>The better a patch is written, the higher the chances that it’ll get accepted and the sooner it will be merged.</p>
 <p>Well-written patches should:</p>
 <ul class="simple">
@@ -277,11 +288,11 @@ patches are easier to review and merge. So, if you’re doing more than one
 change (or bug fix), please consider submitting one patch per change. Do not
 collapse multiple changes into a single patch. For big changes consider using
 a patch queue.</p></li>
-<li><p>pass all unit-tests. See <a class="reference internal" href="#id4">Running tests</a> below.</p></li>
+<li><p>pass all unit-tests. See <a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html#running-tests"><span class="std std-ref">Running tests</span></a> below.</p></li>
 <li><p>include one (or more) test cases that check the bug fixed or the new
-functionality added. See <a class="reference internal" href="#writing-tests">Writing tests</a> below.</p></li>
+functionality added. See <a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html#writing-tests"><span class="std std-ref">Writing tests using Unittest</span></a> below.</p></li>
 <li><p>if you’re adding or changing a public (documented) API, please include
-the documentation changes in the same patch.  See <a class="reference internal" href="#id3">Documentation policies</a>
+the documentation changes in the same patch.  See <a class="reference internal" href="#id1">Documentation policies</a>
 below.</p></li>
 <li><p>if you’re adding a private API, please add a regular expression to the
 <code class="docutils literal notranslate"><span class="pre">coverage_ignore_pyobjects</span></code> variable of <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code> to exclude the new
@@ -289,7 +300,7 @@ private API from documentation coverage checks.</p></li>
 </ul>
 </div>
 <div class="section" id="submitting-patches">
-<span id="id2"></span><h1>Submitting patches<a class="headerlink" href="#submitting-patches" title="Permalink to this headline">¶</a></h1>
+<span id="id3"></span><h2>Submitting patches<a class="headerlink" href="#submitting-patches" title="Permalink to this headline">¶</a></h2>
 <p>The best way to submit a patch is to issue a <a class="reference external" href="https://help.github.com/en/articles/creating-a-pull-request">pull request</a> on GitHub,
 optionally creating a new issue first.</p>
 <p>Remember to explain what was fixed or the new functionality (what it is, why
@@ -325,77 +336,6 @@ instead of <strong>“Fix for #411”</strong>.
 <p>Finally, try to keep aesthetic changes (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> compliance, unused imports
 removal, etc) in separate commits from functional changes. This will make pull
 requests easier to review and more likely to get merged.</p>
-</div>
-<div class="section" id="coding-style">
-<h1>Coding style<a class="headerlink" href="#coding-style" title="Permalink to this headline">¶</a></h1>
-<p>Please follow these coding conventions when writing code for inclusion in
-STDM:</p>
-<ul class="simple">
-<li><p>Unless otherwise specified, follow <span class="target" id="index-1"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a>.</p></li>
-<li><p>It’s OK to use lines longer than 80 chars if it improves the code
-readability.</p></li>
-<li><p>Don’t put your name in the code you contribute; git provides enough
-metadata to identify author of the code.
-See <a class="reference external" href="https://help.github.com/articles/setting-your-username-in-git/">Setting your username in git</a> for
-setup instructions.</p></li>
-</ul>
-</div>
-<div class="section" id="documentation-policies">
-<span id="id3"></span><h1>Documentation policies<a class="headerlink" href="#documentation-policies" title="Permalink to this headline">¶</a></h1>
-<p>For reference documentation of API members (classes, methods, etc.) use
-docstrings and make sure that the Sphinx documentation uses the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">autodoc</a>
-extension to pull the docstrings. API reference documentation should follow
-docstring conventions (<a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a>) and be IDE-friendly: short, to the point,
-and it may provide short examples.</p>
-<p>Other types of documentation, such as tutorials or topics, should be covered in
-files within the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory. This includes documentation that is
-specific to an API member, but goes beyond API reference documentation.</p>
-<p>In any case, if something is covered in a docstring, use the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">autodoc</a>
-extension to pull the docstring into the documentation instead of duplicating
-the docstring in files within the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory.</p>
-</div>
-<div class="section" id="tests">
-<h1>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h1>
-<p>Tests are implemented using the <cite>Unit-testing framework</cite></p>
-<div class="admonition-todo admonition" id="index-2">
-<span id="running-tests"></span><p class="admonition-title">Todo</p>
-<p>[Unittests]</p>
-</div>
-<div class="admonition-todo admonition" id="index-3">
-<p class="admonition-title">Todo</p>
-<p>[Pytest examples]</p>
-</div>
-<div class="section" id="id4">
-<h2>Running tests<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-todo admonition" id="index-4">
-<p class="admonition-title">Todo</p>
-<p>[Unittests]</p>
-</div>
-<div class="admonition-todo admonition" id="index-5">
-<p class="admonition-title">Todo</p>
-<p>[Coverage reports]</p>
-</div>
-<p>To see coverage report install <a class="reference external" href="https://pypi.python.org/pypi/coverage">coverage</a> (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">coverage</span></code>) and run:</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">report</span></code></p>
-</div></blockquote>
-<p>see output of <code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">--help</span></code> for more options like html or xml report.</p>
-</div>
-<div class="section" id="writing-tests">
-<h2>Writing tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h2>
-<p>All functionality (including new features and bug fixes) must include a test
-case to check that it works as expected, so please include tests for your
-patches if you want them to get accepted sooner.</p>
-<p>STDM uses unit-tests, which are located in the <code class="docutils literal notranslate"><span class="pre">tests/</span></code> directory.
-Their module name typically resembles the full path of the module they’re
-testing. For example, the item <code class="docutils literal notranslate"><span class="pre">connect</span></code> code is in:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``pscopg2.connect``
-</pre></div>
-</div>
-<p>And their unit-tests are in:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tests</span><span class="o">/</span><span class="n">test_connect</span><span class="o">.</span><span class="n">py</span>
-</pre></div>
-</div>
 </div>
 </div>
 

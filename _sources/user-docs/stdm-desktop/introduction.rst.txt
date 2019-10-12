@@ -1,11 +1,6 @@
-STDM Plugin
-===========
+STDM Desktop
+===================
 
 .. toctree::
    :maxdepth: 1
    :name: toc-intro-stdm-desktop
-
-
-.. history
-.. authors
-.. license

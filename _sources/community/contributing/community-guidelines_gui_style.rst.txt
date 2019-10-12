@@ -1,0 +1,74 @@
+.. _doc_guidelines_community_gui_style:
+
+GUI Style Guidelines
+========================
+
+In order for all graphical user interface elements to appear consistent and to all the user to instinctively use dialogs,
+it is important that the following guidelines are followed in layout and design of GUIs.
+
+
+QGIS Developer Human Interface Guidelines (HIG)
+-------------------------------------------------------
+
+* Group related elements using group boxes: Try to identify elements that can be grouped together and then use group boxes with a label to identify the topic of that group. 
+  Avoid using group boxes with only a singlewidget / item inside.
+
+* Capitalise first letter only in labels, tool tips, descriptive text, and other non-heading or title text:  Theseshould be written as a phrase with leading capital letter, 
+  and all remaining words written with lower casefirst letters, unless they are nouns
+
+* Capitalize all words in Titles (group box, tab, list view columns, and so on), Functions (menu items, but-tons), 
+  and other selectable items (combobox items, listbox items, tree list items, and so on):  Capitalize allwords, except prepositions that are shorter than five letters (for example, 
+  ‘with’ but ‘Without’), conjunctions(for example, and, or, but), and articles (a, an, the). However, always capitalize the first and last word.
+
+* Do not end labels for widgets or group boxes with a colon: Adding a colon causes visual noise and does notimpart additional meaning, so don’t use them.
+
+* Keep harmful actions away from harmless ones:  If you have actions for ‘delete’, ‘remove’ etc, try to im-pose adequate space between the harmful action 
+  and innocuous actions so that the users is less likely toinadvertently click on the harmful action.
+
+* Always use a QButtonBox for ‘OK’, ‘Cancel’ etc buttons: Using a button box will ensure that the order of‘OK’ and ‘Cancel’ etc, 
+  buttons is consistent with the operating system / locale / desktop environment thatthe user is using.
+
+* Tabs should not be nested.  If you use tabs, follow the style of the tabs used in QgsVectorLayerProperties /QgsProjectProperties etc. 
+  i.e. tabs at top with icons at 22x22.
+
+* Widget stacks should be avoided if at all possible.  They cause problems with layouts and inexplicable (tothe user) resizing of dialogs to accommodate widgets that are not visible.
+
+* Try to avoid technical terms and rather use a laymans equivalent e.g.  use the word ‘Opacity’ rather than‘Alpha Channel’ (contrived example), ‘Text’ instead of ‘String’ and so on.
+
+* Use consistent iconography. If you need an icon or icon elements, please contact Robert Szczepanek on themailing list for assistance.
+
+* Place long lists of widgets into scroll boxes. No dialog should exceed 580 pixels in height and 1000 pixelsin width.
+
+* Separate advanced options from basic ones. Novice users should be able to quickly access the items neededfor basic activities without needing to concern themselves with complexity 
+  of advanced features. Advancedfeatures should either be located below a dividing line, or placed onto a separate tab.
+
+* Don’t add options for the sake of having lots of options.  Strive to keep the user interface minimalistic anduse sensible defaults.
+
+* If clicking a button will spawn a new dialog, an ellipsis char (. . . )  should be suffixed to the button text.Note, 
+  make sure to use the U+2026 Horizontal Ellipsis char instead of three periods.
+
+
+
+
+Microsoft Inductive User Interface (IUI)
+---------------------------------------------
+
+This topic describes the user interface model known as inductive user interface (IUI). Also called inductive navigation, 
+the IUI model suggests how to make software applications simpler by breaking features into screens or pages that are easy to explain and understand. 
+
+* The first step in designing an IUI is to take a feature or set of features and break it into separate screens. Each screen should be focused on a single task, 
+  called the screen's primary task.
+
+* Each screen should be titled with a concise and explicit statement of its primary task. This can be a direct instruction or a question you want the user to answer.
+
+* The title of the screen is very important. Whether the product uses windows, web-style pages, dialogs, or another design, the title should not be allowed to scroll off.
+
+* Make the screen's contents suit the task
+
+* Provide a clear exit from the screen
+
+* The last step in designing a screen is to provide links to secondary tasks, which are features that do not directly accomplish the primary task, but are related to the screen.
+  For example, if the primary task on a screen is to write a letter, secondary tasks on that screen might be to look up a mailing address or print an envelope.
+
+* When designing software that follows the IUI model, you should create a template to use as a guide for every screen. The inductive model does not dictate that you use 
+  any particular template. 

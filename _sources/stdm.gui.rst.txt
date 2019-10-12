@@ -1,0 +1,22 @@
+stdm.gui package
+================
+
+Submodules
+----------
+
+stdm.gui.module module
+----------------------
+
+.. automodule:: stdm.gui.module
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: stdm.gui
+    :members:
+    :undoc-members:
+    :show-inheritance:
