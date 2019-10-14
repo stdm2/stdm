@@ -54,7 +54,7 @@ before_script:
   - git config --global user.name "Travis Cli"
   - git checkout $TRAVIS_BRANCH
   - find . -name \*.py -exec autopep8 --recursive --aggressive --aggressive --in-place {} +
-  - num_errors_after=`find . -name \*.py -exec pycodestyle --ignore=E402 {} + | wc -l`
+  - num_errors_after=`find . -name \*.py -exec pycodestyle --ignore=E402, W503 {} + | wc -l`
   - echo $num_errors_after
   - |
       if (( $num_errors_after < $num_errors_before )); then > /dev/null
@@ -72,8 +72,8 @@ script:
   # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
   # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory  # docker tests
   # - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"  # docker tests
-  - coverage run stdm/tests/test_plugin.py # coverage test
-  - coverage report -m # create coverage report
+  # - coverage run stdm/tests/test_plugin.py # coverage test
+  # - coverage report -m # create coverage report
 
 after_success:
   - |
