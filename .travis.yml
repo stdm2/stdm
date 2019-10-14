@@ -65,7 +65,12 @@ before_script:
   # List the remaining errors - these will have to be fixed manually
   # - pycodestyle --ignore=E402,W503 stdm/
   # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
+  - pwd
+  - ls -lah
   - cd ..
+  - pwd
+  - ls -lah
+
 script:
   # - python -m unittest discover -v # should pass locally first
   # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
