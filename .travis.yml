@@ -65,8 +65,8 @@ before_script:
   - cd ..  "$TRAVIS_BUILD_DIR"
 
   # List the remaining errors - these will have to be fixed manually
-  - pycodestyle --ignore=E402,W503
-  - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503
+  - pycodestyle --ignore=E402,W503 stdm/
+  - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
 
 script:
   # - python -m unittest discover -v # should pass locally first
