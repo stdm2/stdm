@@ -44,9 +44,9 @@ install:
 
 before_script:
   # - black --check stdm/
-  - black --target-version py36 -l 79 stdm/
-  - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} + | wc -l`
-  - echo $num_errors_before
+  # - black --target-version py36 -l 79 stdm/
+  # - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} + | wc -l`
+  # - echo $num_errors_before
   # - cd "$TRAVIS_BUILD_DIR"
   # - pwd
   # - ls -lah
