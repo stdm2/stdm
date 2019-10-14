@@ -57,7 +57,7 @@ before_script:
   - num_errors_after=`find . -name \*.py -exec pycodestyle --ignore=E402, W503 {} + | wc -l`
   - echo -e $num_errors_after
   - |
-      if (( $num_errors_after < $num_errors_before )); then > /dev/null
+      if (( $num_errors_after < $num_errors_before )); then
           git commit -a -m "PEP-8 Fix"
           git config --global push.default simple # Push only to the current branch.  
           git push -fq origin master # --quiet
