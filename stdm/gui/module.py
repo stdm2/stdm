@@ -23,11 +23,9 @@ email                : stdm@unhabitat.org
  ***************************************************************************/
 """
 
-from abc import (
-    ABC,
-    abstractmethod
-)
+from abc import ABC, abstractmethod
 from PyQt5.QtGui import QIcon
+
 # from PyQt.QtWidgets import QAction
 # from qgis.gui import QgisInterface
 from stdm.core.security import PermissionInfo
@@ -61,6 +59,7 @@ class StdmModule(ABC):
 
     Requires to be sub-classed for specific modules.
     """
+
     m_types = {}
     qaction_creator = create_qaction
 
