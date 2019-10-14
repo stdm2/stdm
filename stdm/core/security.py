@@ -3,9 +3,9 @@
 
 Name                 : Security module
 Description          : Exposes various functionality for managing users,
-                       
+
                        roles and their access to security objects.
-                       
+
 Date                 : 28-05-2019
 copyright            : (C) 2019 by UN-Habitat and implementing partners.
 contributors         : See the accompanying file CONTRIBUTORS.txt in the root

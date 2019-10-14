@@ -48,4 +48,3 @@ class TestStdmModule(unittest.TestCase):
 
     def test_all(self):
         self.assertEqual(len(StdmModule.all()), 2)
-

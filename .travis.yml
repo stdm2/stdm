@@ -60,8 +60,6 @@ before_script:
   - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402 {} + | wc -l`
   - echo $num_errors_before
   - cd "$TRAVIS_BUILD_DIR"
-  - pwd
-  - ls -lah
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis Cli"
   - git checkout $TRAVIS_BRANCH
@@ -69,7 +67,7 @@ before_script:
   - num_errors_after=`find . -name \*.py -exec pycodestyle --ignore=E402 {} + | wc -l`
   - echo $num_errors_after
   - |
-      if (( $num_errors_after < $num_errors_before )); then
+      if (( $num_errors_after < $num_errors_before )); then > /dev/null
           git commit -a -m "PEP-8 Fix"
           git config --global push.default simple # Push only to the current branch.  
           # Make sure to make the output quiet, or else the API token will 
