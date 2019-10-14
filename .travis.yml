@@ -68,12 +68,12 @@ before_script:
   # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
 
 script:
-  - python -m unittest discover -v # should pass locally first
+  # - python -m unittest discover -v # should pass locally first
   # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
   # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory  # docker tests
   # - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"  # docker tests
   # - coverage run stdm/tests/test_plugin.py # coverage test
-  # - coverage report -m # create coverage report
+  - coverage report -m # create coverage report
 
 after_success:
   - |
