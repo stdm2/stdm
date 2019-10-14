@@ -63,9 +63,9 @@ before_script:
           git push -fq origin master # --quiet
       fi
   # List the remaining errors - these will have to be fixed manually
-  - pycodestyle --ignore=E402,W503 stdm/
-  - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
-
+  # - pycodestyle --ignore=E402,W503 stdm/
+  # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
+  - cd ..
 script:
   # - python -m unittest discover -v # should pass locally first
   # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
