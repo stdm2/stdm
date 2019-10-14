@@ -62,7 +62,7 @@ before_script:
           git config --global push.default simple # Push only to the current branch.  
           git push -fq origin master # --quiet
       fi
-  - cd "$TRAVIS_BUILD_DIR"
+  # - cd "$TRAVIS_BUILD_DIR"
   # List the remaining errors - these will have to be fixed manually
   # - pycodestyle --ignore=E402,W503 stdm/
   # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
