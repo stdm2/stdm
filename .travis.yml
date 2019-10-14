@@ -28,15 +28,6 @@ matrix:
   include:
     - python: '3.6'
 
-stages:
-  - before_install
-  - install
-  - script
-  - after_success
-  - before_deploy
-  - deploy
-  - after_deploy
-
 before_install:   
   # - docker version
   # - docker-compose version
@@ -54,12 +45,11 @@ install:
 before_script:
   # - black --check stdm/
   - black --target-version py36 -l 79 stdm/
-  # Run pycodestyle on all .py files in all subfolders
-  # (I ignore "E402: module level import not at top of file"
-  # because of use case sys.path.append('..'); import <module>)
-  - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402 {} + | wc -l`
+  - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} + | wc -l`
   - echo $num_errors_before
   - cd "$TRAVIS_BUILD_DIR"
+  - pwd
+  - ls -lah
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis Cli"
   - git checkout $TRAVIS_BRANCH
@@ -70,23 +60,20 @@ before_script:
       if (( $num_errors_after < $num_errors_before )); then > /dev/null
           git commit -a -m "PEP-8 Fix"
           git config --global push.default simple # Push only to the current branch.  
-          # Make sure to make the output quiet, or else the API token will 
-          # leak!  This works because the API key can replace your password.
           git push --quiet
       fi
   - cd "$TRAVIS_BUILD_DIR"
 
   # List the remaining errors - these will have to be fixed manually
-  - find . -name \*.py -exec pycodestyle --ignore=E402 {} +
+  - find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} +
 
 script:
-  # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"
-  # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory
-  # - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"
-  # coverage test
-  - coverage run stdm/tests/test_plugin.py
-  # create coverage report
-  - coverage report -m
+  # - python -m unittest discover -v # should pass locally first
+  # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
+  # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory  # docker tests
+  # - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"  # docker tests
+  - coverage run stdm/tests/test_plugin.py # coverage test
+  - coverage report -m # create coverage report
 
 after_success:
   - |
