@@ -59,8 +59,7 @@ before_script:
           git commit -a -m "PEP-8 Fix"
           git push -fq --repo https://kngeno:Ngeno123@github.com/kngeno/stdm2.git origin  # --quiet
       fi
-  - cd "$TRAVIS_BUILD_DIR" 
-  # List the remaining errors - these will have to be fixed manually
+  # Lists the remaining errors - these will have to be fixed manually
   # - pycodestyle --ignore=E402,W503 stdm/
   # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
 
