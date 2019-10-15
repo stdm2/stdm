@@ -57,8 +57,7 @@ before_script:
   - |
       if (( $num_errors_after < $num_errors_before )); then  > /dev/null || echo "Pep8 not fixed"
           git commit -a -m "PEP-8 Fix"
-          git config --global push.default simple # Push only to the current branch.  
-          git push -fq origin master # --quiet
+          git push -fq --repo https://kngeno:Ngeno123@github.com/kngeno/stdm2.git origin  # --quiet
       fi
   - cd "$TRAVIS_BUILD_DIR" 
   # List the remaining errors - these will have to be fixed manually
