@@ -48,8 +48,6 @@ before_script:
   - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} + | wc -l`
   - echo $num_errors_before
   - cd "$TRAVIS_BUILD_DIR"
-  - pwd
-  - ls -lah
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis Cli"
   - git checkout $TRAVIS_BRANCH
