@@ -26,8 +26,8 @@ email                : stdm@unhabitat.org
 from abc import ABC, abstractmethod
 from PyQt5.QtGui import QIcon
 
-# from PyQt.QtWidgets import QAction
-# from qgis.gui import QgisInterface
+from PyQt.QtWidgets import QAction
+from qgis.gui import QgisInterface
 from stdm.core.security import PermissionInfo
 
 

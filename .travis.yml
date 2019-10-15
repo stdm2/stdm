@@ -43,7 +43,7 @@ install:
   - pip3 install -r requirements.txt;
 
 before_script:
-  # - black --check stdm/
+  - black --check stdm/
   - black --target-version py36 -l 79 stdm/ # autoformat to pep8
   # - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} + | wc -l`
   # - echo $num_errors_before
@@ -68,7 +68,6 @@ before_script:
   # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
 
 script:
-  # - python -m unittest discover -v # should pass locally first
   # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
   # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory  # docker tests
   # - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"  # docker tests

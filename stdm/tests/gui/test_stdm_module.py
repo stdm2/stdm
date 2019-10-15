@@ -20,7 +20,7 @@ email                : stdm@unhabitat.org
 """
 
 import unittest
-# from qgis.utils import iface
+from qgis.utils import iface
 from stdm.gui.module import StdmModule
 from stdm.tests.gui.custom_modules import (
     ConfigurationModule,
