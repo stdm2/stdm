@@ -52,7 +52,7 @@ before_script:
   - git config --global user.name "Travis Cli"
   - git checkout $TRAVIS_BRANCH
   - find . -name \*.py -exec autopep8 --recursive --aggressive --aggressive --in-place {} +
-  - find . -name '*.py' -exec autoflake --in-place --remove-all-unused-imports {} +
+  - find . -name '*.py' -exec autopep8 --in-place --recursive --max-line-length=79 {} +
   - num_errors_after=`find . -name \*.py -exec pycodestyle --ignore=E402, W503 {} + | wc -l`
   - echo -e $num_errors_after
   - |
